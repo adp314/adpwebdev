@@ -18,7 +18,7 @@ export function HomeMView() {
               {t("home_presentation_3")}
             </h1>
             <div className="mt-4 text-xl font-light text-gray-400">
-              <p className="">{t("home_subpres_1")}</p>
+              <p>{t("home_subpres_1")}</p>
               <p className="">{t("home_subpres_2")}</p>
             </div>
           </div>
