@@ -1,7 +1,8 @@
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
 import "../../i18n";
-import { RxHamburgerMenu, RxCross2 } from "react-icons/Rx";
+import { RxHamburgerMenu } from "react-icons/Rx";
+import { RxCross2 } from "react-icons/Rx";
 
 export function NavbarMobile() {
   const { t, i18n } = useTranslation();
