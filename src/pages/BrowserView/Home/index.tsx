@@ -1,10 +1,10 @@
 import { useTranslation } from "react-i18next";
-import "../../i18n";
-import { Navbar } from "../../layouts/Navbar";
-import { Projects } from "../../components/Projects";
-import { Footer } from "../../layouts/Footer";
+import "../../../i18n";
+import { Navbar } from "../../../layouts/Navbar";
+import { Projects } from "../../../components/Projects";
+import { Footer } from "../../../layouts/Footer";
 
-export function Home() {
+export function HomeBView() {
   const { t, i18n } = useTranslation();
   return (
     <div className="w-full h-full font-Cairo text-white px-14 bg-gradient-to-bl from-[#05010E] via-[#160523] to-[#1D041F] animate-gradient ">
