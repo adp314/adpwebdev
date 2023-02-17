@@ -11,11 +11,11 @@ export function HomeMView() {
         <div className="flex justify-between">
           <div className="mt-16">
             <h1 className="text-4xl ">
-              {t("homepresentation1")}
+              {t("home_presentation_1")}
               <br />
-              {t("homepresentation2")}
+              {t("home_presentation_2")}
               <br />
-              {t("homepresentation3")}
+              {t("home_presentation_3")}
             </h1>
             <div className="mt-4 text-xl font-light text-gray-400">
               <p className="">{t("home_subpres_1")}</p>
