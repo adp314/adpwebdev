@@ -1,8 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
+import { HiMenu, HiX } from "react-icons/hi";
 import "../../i18n";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { HiMenu } from "react-icons/hi";
 
 export function NavbarMobile() {
   const { t, i18n } = useTranslation();
@@ -108,14 +107,14 @@ export function NavbarMobile() {
 
         <div>
           {!isMenu ? (
-            <GiHamburgerMenu
+            <HiMenu
               className="text-3xl"
               onClick={() => {
                 setIsMenu(!isMenu);
               }}
             />
           ) : (
-            <HiMenu
+            <HiX
               className="text-3xl"
               onClick={() => {
                 setIsMenu(!isMenu);
