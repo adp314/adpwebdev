@@ -8,6 +8,8 @@ import { Suspense } from "react";
 
 const loadingTraduction = "Loading traduction...";
 
+
+
 function App() {
   return (
     <BrowserRouter>

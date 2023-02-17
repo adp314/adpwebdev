@@ -17,6 +17,6 @@ i18next
       caches: ["localStorage"],
     },
     backend: {
-      loadPath: `/src/locales/{{lng}}/{{ns}}.json`,
+      loadPath: `/locales/{{lng}}/{{ns}}.json`,
     },
   });
