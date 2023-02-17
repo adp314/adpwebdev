@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
 import "../../i18n";
-import { RxHamburgerMenu } from "react-icons/Rx";
+import { GiHamburgerMenu } from "react-icons/Gi";
 import { RxCross2 } from "react-icons/Rx";
 
 export function NavbarMobile() {
@@ -108,7 +108,7 @@ export function NavbarMobile() {
 
         <div>
           {!isMenu ? (
-            <RxHamburgerMenu
+            <GiHamburgerMenu
               className="text-3xl"
               onClick={() => {
                 setIsMenu(!isMenu);
