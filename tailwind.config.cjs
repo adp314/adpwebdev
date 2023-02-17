@@ -7,7 +7,7 @@ module.exports = {
     },
     animation: {
       gradient: "animateGradient 12s ease infinite",
-      gradientSpeed: "animateGradient 8s ease infinite",
+      gradientSpeed: "animateGradient 6s ease infinite",
     },
     keyframes: {
       animateGradient: {

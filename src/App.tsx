@@ -22,7 +22,6 @@ function App() {
         <MobileView>
           <Routes>
             <Route path="/" element={<HomeMView />} />
-            <Route path="/home" element={<HomeMView />} />
           </Routes>
         </MobileView>
         {/* /// */}
