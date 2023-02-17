@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import "../../i18n";
 import { Navbar } from "../../layouts/Navbar";
 import { Projects } from "../../components/Projects";
+import { Footer } from "../../layouts/Footer";
 
 export function Home() {
   const { t, i18n } = useTranslation();
@@ -31,6 +32,7 @@ export function Home() {
       <div className="mt-24">
         <Projects />
       </div>
+      <Footer />
     </div>
   );
 }
