@@ -102,19 +102,6 @@ export function Navbar() {
             )}
           </div>
         </div>
-
-        <div>
-          <nav className="flex justify-center items-center gap-4">
-            <p className="font-light text-2xl">{t("nav_home")}</p>
-            <p className="font-light text-2xl">{t("nav_about")}</p>
-            <p className="font-light text-2xl">{t("nav_contact")}</p>
-            <div className="h-full w-full rounded bg-gradient-to-tr from-violet-200 to-slate-600 animate-gradientSpeed p-0.5 cursor-pointer">
-              <div className="h-full w-full bg-neutral-900 hover:bg-white hover:text-black ease-in duration-200 rounded px-2 py-1">
-                <p className="text-2xl">{t("nav_curriculum")}</p>
-              </div>
-            </div>
-          </nav>
-        </div>
       </div>
     </div>
   );

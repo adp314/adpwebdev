@@ -6,7 +6,7 @@ module.exports = {
       fontFamily: { Cairo: ["Cairo"] },
     },
     animation: {
-      gradient: "animateGradient 12s ease infinite",
+      gradient: "animateGradient 14s ease infinite",
       gradientSpeed: "animateGradient 6s ease infinite",
     },
     keyframes: {
