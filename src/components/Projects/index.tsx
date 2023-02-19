@@ -10,10 +10,10 @@ export function Projects() {
   return (
     <div>
       <h2 className="text-5xl">{t("home_project_title")}</h2>
-      <div className=" mt-10 pb-10 flex justify-start gap-16">
+      <div className=" mt-10 pb-10 flex justify-between w-full">
         <Cards
           cardContainer={
-            <div className="h-full w-full bg-[url('/src/assets/cinelist.jpg')] bg-cover bg-center rounded-3xl ">
+            <div className="h-full w-full bg-cover bg-center rounded-3xl ">
               <div className="h-full w-full py-2 px-5 rounded-3xl bg-black bg-opacity-90 flex flex-col justify-between cursor-pointer hover:bg-opacity-30 hover:opacity-0 hover:duration-300">
                 <div className="flex justify-start items-center text-xl font-light ">
                   2022/11 /// Cinelist
@@ -34,7 +34,7 @@ export function Projects() {
         />
         <Cards
           cardContainer={
-            <div className="h-full w-full bg-[url('/src/assets/goultarena.png')] bg-cover bg-left-top rounded-3xl ">
+            <div className="h-full w-full bg-cover bg-left-top rounded-3xl ">
               <div className="h-full w-full py-2 px-5 rounded-3xl bg-black bg-opacity-80 flex flex-col justify-between cursor-pointer hover:bg-opacity-30 hover:opacity-0 hover:duration-300">
                 <div className="flex justify-start items-center text-xl font-light">
                   2022/12 /// Goultarena
@@ -55,7 +55,7 @@ export function Projects() {
         />
         <Cards
           cardContainer={
-            <div className="h-full w-full bg-[url('/src/assets/adpwebdev.png')] bg-cover bg-left-top rounded-3xl ">
+            <div className="h-full w-full bg-cover bg-left-top rounded-3xl ">
               <div className="h-full w-full py-2 px-5 rounded-3xl bg-black bg-opacity-80 flex flex-col justify-between cursor-pointer hover:bg-opacity-30 hover:opacity-0 hover:duration-300">
                 <div className="flex justify-start items-center text-xl font-light ">
                   2023/02 /// Adpwebdev
@@ -68,23 +68,6 @@ export function Projects() {
                 </div>
                 <div className="flex justify-end text-xl font-light text-opacity-10 ">
                   // Personal website
-                </div>
-              </div>
-            </div>
-          }
-        />
-        <Cards
-          cardContainer={
-            <div className="h-full w-full bg-cover bg-center rounded-3xl ">
-              <div className="h-full w-full py-2 px-5 rounded-3xl bg-black bg-opacity-90 flex flex-col justify-between cursor-pointer hover:bg-opacity-30 hover:opacity-0 hover:duration-300">
-                <div className="flex justify-start items-center text-xl font-light">
-                  ????/?? /// ??????
-                </div>
-                <div className="flex justify-center">
-                  <p className="text-4xl">?</p>
-                </div>
-                <div className="flex justify-end text-xl font-light text-opacity-10">
-                  // Coming soon
                 </div>
               </div>
             </div>
