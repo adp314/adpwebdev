@@ -30,10 +30,10 @@ export function HomeBView() {
           </div>
         </div>
 
-        <div className="mt-20">
+        <div className="mt-24">
           <Projects />
         </div>
-        <div className="mt-20">
+        <div className="mt-24">
           <About />
         </div>
         <Footer />
