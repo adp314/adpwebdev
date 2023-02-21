@@ -8,7 +8,7 @@ import { About } from "../../../components/About";
 export function HomeBView() {
   const { t, i18n } = useTranslation();
   return (
-    <div className="w-full h-full font-Cairo text-white flex flex-col justify-start items-center bg-gradient-to-bl from-[#05010E] via-[#160523] to-[#1D041F] animate-gradient ">
+    <div className="w-full h-full font-Cairo text-white flex flex-col justify-start items-center bg-gradient-to-bl from-[#161413] via-[#160616] to-[#160822] animate-gradient ">
       <div className=" w-[1100px]">
         <Navbar />
 

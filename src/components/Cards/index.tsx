@@ -1,8 +1,8 @@
 export function Cards(props: any) {
   const { cardContainer } = props;
   return (
-    <div className="h-56 w-64 bg-gradient-to-b from-[#F2F2F2] to-[#404040] rounded-3xl p-0.5 shadow-[0_4px_4px_-0px_rgba(0,0,0,0.25)]">
-      <div className="h-full w-full bg-[#110415] rounded-3xl">
+    <div className="h-56 w-64 bg-gradient-to-b from-[#575757b9] to-[#1b1b1bf3] rounded-tr-3xl rounded-bl-3xl p-0.5 drop-shadow-lg">
+      <div className="h-full w-full bg-gradient-to-bl from-[#24201e] to-[#190b22] rounded-tr-3xl rounded-bl-3xl hover:duration-300">
         {cardContainer}
       </div>
     </div>

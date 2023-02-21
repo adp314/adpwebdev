@@ -38,7 +38,10 @@ export function Navbar() {
     <div className="w-full font-Cairo text-white">
       <div className="pt-12 flex gap-4 justify-between items-center">
         <div className="flex gap-6 justify-start items-center">
-          <div className="flex justify-center items-center text-4xl pb-2">
+          <div
+            className="flex justify-center items-center text-4xl pb-2 cursor-pointer"
+            onClick={() => window.location.reload()}
+          >
             <span className="underline">a</span>
             <p className="font-bold">dp</p>
           </div>

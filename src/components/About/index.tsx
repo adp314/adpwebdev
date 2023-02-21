@@ -13,22 +13,23 @@ export function About() {
       <h2 className="text-5xl">{t("home_about_title")}</h2>
       <div>
         <p className="text-xl font-light mt-10">
-          Je m'appelle André, j'ai 25 ans et je suis récemment devenu en
-          décembre. 2022 développeur fullstack. Je suis née au Portugal, mais
-          j'ai vécu presque toute ma vie en France. Après de nombreuses
-          expériences dans différents domaines liés à l'informatique, j'ai
-          décidé de me former via Ironhack São Paulo. Après m'être auto formée
-          après le Bootcamp Ironhack, j'ai également fait des missions amicales
-          et des projects personnels. Curieux et touche-à-tout lié au domaine
-          WEB en Javascript/Typescript, je suis très enthousiaste de démarrer
-          une nouvelle expérience. Vous pouvez me suivre, ou bien accéder à plus
+          J'ai 25 ans, je suis récemment devenu en décembre 2022 développeur web
+          fullstack, je suis née au Portugal, mais j'ai vécu presque toute ma
+          vie en France. Après de nombreuses expériences dans différents
+          domaines liés à l'informatique, j'ai décidé de me former au
+          developpement web via Ironhack São Paulo. Après le Bootcamp Ironhack,
+          j'ai fais des missions amicales pour des amis et des projects
+          personnels à fin de m'auto-former et être prêt pour le marché du
+          travail. Curieux et touche-à-tout lié au domaine WEB autour du
+          Javascript/Typescript, je suis très enthousiaste de démarrer une
+          nouvelle expérience. Vous pouvez me suivre, ou bien accéder à plus
           d'informations ci-dessous.
         </p>
       </div>
-      <div className=" mt-16 flex w-full gap-10">
+      <div className=" mt-16 flex w-full gap-10 ">
         <div className="flex flex-col w-[50%] gap-10">
           <div className="flex gap-10">
-            <div className=" h-56 w-64 bg-gradient-to-b from-[#bdbdbd71] to-[#3d3d3d4f] rounded-3xl p-0.5 drop-shadow-lg">
+            <div className=" h-56 w-64 bg-gradient-to-b from-[#272149fb] to-[#2d2d2e] rounded-3xl p-0.5 drop-shadow-lg">
               <div className="w-full h-full bg-gradient-to-b from-blue-900 to-gray-900 rounded-3xl">
                 <div className="px-8 py-6 ">
                   <div>
@@ -51,7 +52,7 @@ export function About() {
                 </div>
               </div>
             </div>
-            <div className=" h-56 w-64 bg-gradient-to-b from-[#bdbdbd71] to-[#3d3d3d4f] rounded-3xl p-0.5 drop-shadow-lg">
+            <div className=" h-56 w-64 bg-gradient-to-b from-[#bdbdbd42] to-[#3030304f] rounded-3xl p-0.5 drop-shadow-lg">
               <div className="w-full h-full bg-gradient-to-b from-blue-900 to-gray-900 rounded-3xl">
                 <div className="px-8 py-6 ">
                   <div>
@@ -114,7 +115,7 @@ export function About() {
               </div>
             </div>
           </div>
-          <div className=" h-56 w-full bg-gradient-to-b from-[#bdbdbd71] to-[#3d3d3d4f] rounded-3xl p-0.5 drop-shadow-lg">
+          <div className=" h-56 w-full bg-gradient-to-b from-[#292929a4] to-[#313131d2] rounded-3xl p-0.5 drop-shadow-lg">
             <div className="w-full h-full bg-gradient-to-b from-gray-900 to-gray-800 rounded-3xl">
               <div className="px-8 py-6 flex justify-between items-center pr-16">
                 <div>
