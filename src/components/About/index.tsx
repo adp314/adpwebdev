@@ -2,9 +2,9 @@ import { useTranslation } from "react-i18next";
 import "../../i18n";
 import { FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsArrowRight } from "react-icons/bs";
-import { RiFileTextFill } from "react-icons/Ri";
-import { FiDownload } from "react-icons/Fi";
-import { SiBuymeacoffee } from "react-icons/Si";
+import { RiFileTextFill } from "react-icons/ri";
+import { FiDownload } from "react-icons/fi";
+import { SiBuymeacoffee } from "react-icons/si";
 
 export function About() {
   const { t, i18n } = useTranslation();
