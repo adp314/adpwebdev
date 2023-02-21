@@ -115,7 +115,7 @@ export function About() {
             </div>
           </div>
           <div className=" h-56 w-full bg-gradient-to-b from-[#292929a4] to-[#313131d2] rounded-3xl p-0.5 drop-shadow-lg">
-            <div className="w-full h-full bg-gradient-to-b from-gray-900 to-gray-800 rounded-3xlmc ">
+            <div className="w-full h-full bg-gradient-to-b from-gray-900 to-gray-800 rounded-3xl ">
               <div className="px-8 py-6 flex justify-between items-center pr-16">
                 <div>
                   <div className="w-14 h-14 bg-gray-800 rounded-2xl flex justify-center items-center drop-shadow-lg">
