@@ -1,9 +1,8 @@
 import { useTranslation } from "react-i18next";
 import "../../i18n";
-import { FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsArrowRight } from "react-icons/bs";
-import { RiFileTextFill } from "react-icons/ri";
-import { FiDownload } from "react-icons/fi";
+import { BsArrowRight, BsTwitter, BsGithub, BsLinkedin } from "react-icons/bs";
+import { RiFileTextFill } from "react-icons/Ri";
+import { FiDownload } from "react-icons/Fi";
 import { SiBuymeacoffee } from "react-icons/si";
 
 export function About() {
@@ -30,11 +29,11 @@ export function About() {
         <div className="flex flex-col w-[50%] gap-10">
           <div className="flex gap-10">
             <div className=" h-56 w-64 bg-gradient-to-b from-[#272149fb] to-[#2d2d2e] rounded-3xl p-0.5 drop-shadow-lg">
-              <div className="w-full h-full bg-gradient-to-b from-blue-900 to-gray-900 rounded-3xl">
+              <div className="w-full h-full bg-gradient-to-b from-blue-900 to-gray-900 rounded-3xl ">
                 <div className="px-8 py-6 ">
                   <div>
                     <div className="w-14 h-14 bg-blue-400 rounded-2xl flex justify-center items-center drop-shadow-lg">
-                      <FaTwitter className="text-white text-3xl" />
+                      <BsTwitter className="text-white text-3xl" />
                     </div>
                     <div className="mt-2">
                       <h2 className="text-2xl">Twitter</h2>
@@ -52,12 +51,12 @@ export function About() {
                 </div>
               </div>
             </div>
-            <div className=" h-56 w-64 bg-gradient-to-b from-[#bdbdbd42] to-[#3030304f] rounded-3xl p-0.5 drop-shadow-lg">
-              <div className="w-full h-full bg-gradient-to-b from-blue-900 to-gray-900 rounded-3xl">
+            <div className=" h-56 w-64 bg-gradient-to-b from-[#bdbdbd42] to-[#3030304f] rounded-3xl  p-0.5 drop-shadow-lg">
+              <div className="w-full h-full bg-gradient-to-b from-blue-900 to-gray-900 rounded-3xl rounded-bl-3xl ">
                 <div className="px-8 py-6 ">
                   <div>
                     <div className="w-14 h-14 bg-gray-900 rounded-2xl flex justify-center items-center drop-shadow-lg">
-                      <FaGithub className="text-white text-3xl" />
+                      <BsGithub className="text-white text-3xl" />
                     </div>
                     <div className="mt-2 ">
                       <h2 className="text-2xl">Github</h2>
@@ -77,7 +76,7 @@ export function About() {
             </div>
           </div>
           <div className=" h-24 w-full bg-gradient-to-b from-[#bdbdbd71] to-[#3d3d3d4f] rounded-3xl p-0.5">
-            <div className="bg-gradient-to-b from-green-900 to-gray-900 h-full w-full rounded-3xl">
+            <div className="bg-gradient-to-b from-green-900 to-gray-900 h-full w-full rounded-3xl ">
               <div className="w-full h-full flex justify-between items-center px-8">
                 <div className="flex justify-start items-center gap-6">
                   <div className="w-14 h-14 bg-green-800 rounded-2xl flex justify-center items-center drop-shadow-lg">
@@ -99,7 +98,7 @@ export function About() {
         </div>
         <div className="flex flex-col w-[50%] gap-10">
           <div className=" h-24 w-full bg-gradient-to-b from-[#bdbdbd71] to-[#3d3d3d4f] rounded-3xl p-0.5">
-            <div className="bg-gradient-to-b from-yellow-500 to-gray-900 h-full w-full rounded-3xl">
+            <div className="bg-gradient-to-b from-yellow-500 to-gray-900 h-full w-full rounded-3xl ">
               <div className="w-full h-full flex justify-between items-center px-8">
                 <div className="flex justify-start items-center gap-6">
                   <div className="w-14 h-14 bg-yellow-500 rounded-2xl flex justify-center items-center drop-shadow-lg">
@@ -116,11 +115,11 @@ export function About() {
             </div>
           </div>
           <div className=" h-56 w-full bg-gradient-to-b from-[#292929a4] to-[#313131d2] rounded-3xl p-0.5 drop-shadow-lg">
-            <div className="w-full h-full bg-gradient-to-b from-gray-900 to-gray-800 rounded-3xl">
+            <div className="w-full h-full bg-gradient-to-b from-gray-900 to-gray-800 rounded-3xlmc ">
               <div className="px-8 py-6 flex justify-between items-center pr-16">
                 <div>
                   <div className="w-14 h-14 bg-gray-800 rounded-2xl flex justify-center items-center drop-shadow-lg">
-                    <FaLinkedinIn className="text-white text-3xl" />
+                    <BsLinkedin className="text-white text-3xl" />
                   </div>
                   <div className="mt-2 ">
                     <h2 className="text-2xl">Linkedin</h2>

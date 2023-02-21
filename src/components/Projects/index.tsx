@@ -4,12 +4,12 @@ import "../../i18n";
 import { Cards } from "../Cards";
 import ironhacklogo from "../../assets/ironhack.png";
 import goultarenalogo from "../../assets/goultarenalogo.png";
-import { FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { TbWorld } from "react-icons/tb";
+import { BsArrowRight, BsTwitter, BsGithub } from "react-icons/bs";
+import { TbWorld } from "react-icons/Tb";
 
 export function Projects() {
   const { t, i18n } = useTranslation();
-  const [projectOne, setProjectOne] = useState(false);
+  const [projectOne, setProjectOne] = useState(true);
   const [projectTwo, setProjectTwo] = useState(false);
   const [projectThree, setProjectThree] = useState(false);
 
@@ -22,7 +22,11 @@ export function Projects() {
         </p>
       </div>
       <div className="flex justify-between w-full">
-        <div className="mt-16 hover:mt-12">
+        <div
+          className={`${
+            projectOne ? "text-white" : "text-gray-400"
+          } mt-16 hover:mt-14 hover:duration-300 hover:drop-shadow-xl`}
+        >
           <Cards
             cardContainer={
               <div
@@ -33,7 +37,7 @@ export function Projects() {
                   setProjectThree(false);
                 }}
               >
-                <div className="h-full w-full py-2 px-5 rounded-3xl flex flex-col justify-between cursor-pointer text-gray-400 hover:text-gray-100 hover:duration-300">
+                <div className="h-full w-full py-2 px-5 rounded-3xl flex flex-col justify-between cursor-pointer text-gray-400 hover:text-white hover:duration-300">
                   <div className="flex justify-start items-center text-lg font-light ">
                     2022/11 /// Cinelist
                   </div>
@@ -48,7 +52,7 @@ export function Projects() {
             }
           />
         </div>
-        <div className="mt-16 hover:mt-12">
+        <div className=" mt-16 hover:mt-14 hover:duration-300 hover:drop-shadow-xl">
           <Cards
             cardContainer={
               <div
@@ -59,9 +63,9 @@ export function Projects() {
                   setProjectThree(false);
                 }}
               >
-                <div className="h-full w-full py-2 px-5 rounded-3xl flex flex-col justify-between cursor-pointer text-gray-400 hover:text-gray-100 hover:duration-300">
+                <div className="h-full w-full py-2 px-5 rounded-3xl flex flex-col justify-between cursor-pointer text-gray-400 hover:text-white hover:duration-300">
                   <div className="flex justify-start items-center text-lg font-light">
-                    2022/12 /// Goultarena
+                    2023/01 /// Goultarena
                   </div>
                   <div className="flex justify-center">
                     <img
@@ -78,7 +82,7 @@ export function Projects() {
             }
           />
         </div>
-        <div className="mt-16 hover:mt-12">
+        <div className="mt-16 hover:mt-14 hover:duration-300 hover:drop-shadow-xl">
           <Cards
             cardContainer={
               <div
@@ -89,7 +93,7 @@ export function Projects() {
                   setProjectThree(!projectThree);
                 }}
               >
-                <div className="h-full w-full py-2 px-5 rounded-3xl flex flex-col justify-between cursor-pointer text-gray-400 hover:text-gray-100 hover:duration-300">
+                <div className="h-full w-full py-2 px-5 rounded-3xl flex flex-col justify-between cursor-pointer text-gray-400 hover:text-white hover:duration-300">
                   <div className="flex justify-start items-center text-lg font-light ">
                     2023/02 /// Adpwebdev
                   </div>
@@ -129,22 +133,19 @@ export function Projects() {
           />
         </div>
       </div>
-      <div>
+      <div className="bg-black bg-opacity-25 rounded-3xl w-full h-full mt-10">
         {projectOne && (
-          <div className=" w-full h-full mt-10 flex justify-start gap-8">
-            <div className="w-96 h-40 rounded-tr-3xl rounded-bl-3xl bg-gradient-to-b from-[#575757b9] to-[#1b1b1bf3] p-0.5 drop-shadow-lg">
-              <div className="w-full h-full rounded-tr-3xl rounded-bl-3xl bg-cover bg-[url('/src/assets/cinelist.jpg')]">
-                <div className="w-full h-full bg-black rounded-tr-3xl rounded-bl-3xl bg-opacity-40"></div>
-              </div>
+          <div className=" w-full h-full flex justify-start gap-8 ">
+            <div className="w-96 h-48 rounded-3xl bg-gradient-to-b from-[#575757b9] to-[#1b1b1bf3] p-0.5 drop-shadow-lg">
+              <div className="w-full h-full rounded-3xl bg-contain bg-no-repeat bg-[url('/src/assets/cinelist_web.jpg')]"></div>
             </div>
             <div className="py-3">
               <div className="flex justify-start items-center gap-4 ">
-                <h2 className="text-3xl mr-6">Cinelist</h2>
+                <h2 className="text-3xl mr-6 uppercase">Cinelist</h2>
                 <span className="text-3xl opacity-50 self-end">//</span>
                 <div className="h-full flex gap-2 justify-start items-center text-xl">
-                  <FaGithub className="opacity-50 hover:opacity-100 cursor-pointer" />
+                  <BsGithub className="opacity-50 hover:opacity-100 cursor-pointer" />
                   <TbWorld className="opacity-50 hover:opacity-100 cursor-pointer" />
-                  <FaTwitter className="opacity-50 hover:opacity-100 cursor-pointer" />
                 </div>
               </div>
               <p className="mt-4">description of cinelist, blablabla</p>
@@ -153,17 +154,16 @@ export function Projects() {
         )}
         {projectTwo && (
           <div className=" w-full h-full mt-10 flex justify-start gap-8">
-            <div className="w-96 h-40 rounded-3xl bg-gradient-to-b from-[#f2f2f25d] to-[#40404073] p-0.5 drop-shadow-lg">
-              <div className="w-full h-full p-3 rounded-3xl bg-cover bg-[url('/src/assets/goultarena.png')]" />
+            <div className="w-96 h-48 rounded-3xl bg-gradient-to-b from-[#f2f2f25d] to-[#40404073] p-0.5 drop-shadow-lg">
+              <div className="w-full h-full rounded-3xl bg-contain bg-no-repeat bg-[url('/src/assets/goultarena.png')]"></div>
             </div>
             <div className="py-3">
               <div className="flex justify-start items-center gap-4 ">
-                <h2 className="text-3xl mr-6">Goultarena</h2>
+                <h2 className="text-3xl mr-6 uppercase">Goultarena</h2>
                 <span className="text-3xl opacity-50 self-end">//</span>
                 <div className="h-full flex gap-2 justify-start items-center text-xl">
-                  <FaGithub className="opacity-50 hover:opacity-100 cursor-pointer" />
+                  <BsGithub className="opacity-50 hover:opacity-100 cursor-pointer" />
                   <TbWorld className="opacity-50 hover:opacity-100 cursor-pointer" />
-                  <FaTwitter className="opacity-50 hover:opacity-100 cursor-pointer" />
                 </div>
               </div>
               <p className="mt-4">description of goultarena, blablabla</p>
@@ -172,17 +172,16 @@ export function Projects() {
         )}
         {projectThree && (
           <div className=" w-full h-full mt-10 flex justify-start gap-8">
-            <div className="w-96 h-40 rounded-3xl bg-gradient-to-b from-[#f2f2f25d] to-[#40404073] p-0.5 drop-shadow-lg">
-              <div className="w-full h-full p-3 rounded-3xl bg-cover bg-[url('/src/assets/adpwebdev.png')]" />
+            <div className="w-96 h-48 rounded-3xl bg-gradient-to-b from-[#f2f2f25d] to-[#40404073] p-0.5 drop-shadow-lg">
+              <div className="w-full h-full rounded-3xl bg-cover bg-[url('/src/assets/adpweb.png')]" />
             </div>
             <div className="py-3">
               <div className="flex justify-start items-center gap-4 ">
-                <h2 className="text-3xl mr-6">Adpwebdev</h2>
+                <h2 className="text-3xl mr-6 uppercase">Adpwebdev</h2>
                 <span className="text-3xl opacity-50 self-end">//</span>
                 <div className="h-full flex gap-2 justify-start items-center text-xl">
-                  <FaGithub className="opacity-50 hover:opacity-100 cursor-pointer" />
+                  <BsGithub className="opacity-50 hover:opacity-100 cursor-pointer" />
                   <TbWorld className="opacity-50 hover:opacity-100 cursor-pointer" />
-                  <FaTwitter className="opacity-50 hover:opacity-100 cursor-pointer" />
                 </div>
               </div>
               <p className="mt-4">description of adpwebdev, blablabla</p>
