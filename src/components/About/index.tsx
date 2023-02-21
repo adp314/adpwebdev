@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
 import "../../i18n";
 import { BsArrowRight, BsTwitter, BsGithub, BsLinkedin } from "react-icons/bs";
-import { RiFileTextFill } from "react-icons/Ri";
-import { FiDownload } from "react-icons/Fi";
+import { RiFileTextFill } from "react-icons/ri";
+import { FiDownload } from "react-icons/fi";
 import { SiBuymeacoffee } from "react-icons/si";
 
 export function About() {
