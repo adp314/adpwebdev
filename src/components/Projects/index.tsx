@@ -5,7 +5,7 @@ import { Cards } from "../Cards";
 import ironhacklogo from "../../assets/ironhack.png";
 import goultarenalogo from "../../assets/goultarenalogo.png";
 import { BsArrowRight, BsTwitter, BsGithub } from "react-icons/bs";
-import { TbWorld } from "react-icons/tb";
+import { TbWorld } from "react-icons/Tb";
 
 export function Projects() {
   const { t, i18n } = useTranslation();
