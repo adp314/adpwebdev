@@ -3,7 +3,9 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      fontFamily: { Cairo: ["Cairo"] },
+      fontFamily: {
+        Cairo: ["Cairo"],
+      },
     },
     animation: {
       gradient: "animateGradient 12s ease infinite",

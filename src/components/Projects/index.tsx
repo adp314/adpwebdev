@@ -9,23 +9,19 @@ import { TbWorld } from "react-icons/tb";
 
 export function Projects() {
   const { t, i18n } = useTranslation();
-  const [projectOne, setProjectOne] = useState(true);
+  const [projectOne, setProjectOne] = useState(false);
   const [projectTwo, setProjectTwo] = useState(false);
   const [projectThree, setProjectThree] = useState(false);
 
   return (
-    <div>
-      <div className="flex justify-start items-end gap-4">
-        <h2 className="text-5xl">{t("home_project_title")}</h2>
-        <p className="text-lg text-gray-500 font-light italic">
-          load more projects.
-        </p>
-      </div>
+    <div className="font-Cairo">
+      <h2 className="text-5xl">{t("home_project_title")}</h2>
+
       <div className="flex justify-between w-full">
         <div
           className={`${
             projectOne ? "text-white" : "text-gray-400"
-          } mt-16 hover:mt-14 hover:duration-300 hover:drop-shadow-xl`}
+          } mt-16 hover:mt-14 hover:duration-300`}
         >
           <Cards
             cardContainer={
@@ -52,7 +48,7 @@ export function Projects() {
             }
           />
         </div>
-        <div className=" mt-16 hover:mt-14 hover:duration-300 hover:drop-shadow-xl">
+        <div className=" mt-16 hover:mt-14 hover:duration-300">
           <Cards
             cardContainer={
               <div
@@ -82,7 +78,7 @@ export function Projects() {
             }
           />
         </div>
-        <div className="mt-16 hover:mt-14 hover:duration-300 hover:drop-shadow-xl">
+        <div className="mt-16 hover:mt-14 hover:duration-300">
           <Cards
             cardContainer={
               <div
@@ -98,7 +94,7 @@ export function Projects() {
                     2023/02 /// Adpwebdev
                   </div>
                   <div className="flex justify-center">
-                    <div className="flex justify-center items-center text-3xl pb-2 bg-gray-800 rounded-3xl h-16 w-20 text-white">
+                    <div className="flex justify-center items-center text-3xl pb-2 bg-gray-900 rounded-3xl h-16 w-20 text-white">
                       <span className="underline">a</span>
                       <p className="font-bold">dp</p>
                     </div>
@@ -133,11 +129,11 @@ export function Projects() {
           />
         </div>
       </div>
-      <div className="bg-black bg-opacity-25 rounded-3xl w-full h-full mt-10">
+      <div className="bg-black bg-opacity-20 w-full h-full mt-10 rounded-3xl">
         {projectOne && (
-          <div className=" w-full h-full flex justify-start gap-8 ">
-            <div className="w-96 h-48 rounded-3xl bg-gradient-to-b from-[#575757b9] to-[#1b1b1bf3] p-0.5 drop-shadow-lg">
-              <div className="w-full h-full rounded-3xl bg-contain bg-no-repeat bg-[url('/src/assets/cinelist_web.jpg')]"></div>
+          <div className=" w-full h-full flex justify-start gap-8">
+            <div className="w-96 h-48 rounded-l-3xl bg-contain bg-no-repeat bg-[url('/src/assets/cinelist_web.jpg')]">
+              <div className="bg-black rounded-l-3xl w-full h-full bg-opacity-50 hover:bg-opacity-0 cursor-pointer hover:duration-200"></div>
             </div>
             <div className="py-3">
               <div className="flex justify-start items-center gap-4 ">
@@ -154,8 +150,11 @@ export function Projects() {
         )}
         {projectTwo && (
           <div className=" w-full h-full mt-10 flex justify-start gap-8">
-            <div className="w-96 h-48 rounded-3xl bg-gradient-to-b from-[#f2f2f25d] to-[#40404073] p-0.5 drop-shadow-lg">
-              <div className="w-full h-full rounded-3xl bg-contain bg-no-repeat bg-[url('/src/assets/goultarena.png')]"></div>
+            <div className="w-96 h-48 rounded-3xl bg-gradient-to-b from-[#2b1f1f] to-[#1f0e2b] p-0.5 drop-shadow-lg">
+              <div className="w-full h-full rounded-3xl bg-contain bg-no-repeat bg-[url('/src/assets/goultarena.png')]">
+                {" "}
+                <div className="bg-black w-full h-full rounded-3xl bg-opacity-40 hover:bg-opacity-0 cursor-pointer hover:duration-200"></div>
+              </div>
             </div>
             <div className="py-3">
               <div className="flex justify-start items-center gap-4 ">
@@ -172,8 +171,10 @@ export function Projects() {
         )}
         {projectThree && (
           <div className=" w-full h-full mt-10 flex justify-start gap-8">
-            <div className="w-96 h-48 rounded-3xl bg-gradient-to-b from-[#f2f2f25d] to-[#40404073] p-0.5 drop-shadow-lg">
-              <div className="w-full h-full rounded-3xl bg-cover bg-[url('/src/assets/adpweb.png')]" />
+            <div className="w-96 h-48 rounded-3xl bg-gradient-to-b from-[#2b1f1f] to-[#1f0e2b] p-0.5 drop-shadow-lg">
+              <div className="w-full h-full rounded-3xl bg-cover bg-[url('/src/assets/adpweb.png')]">
+                <div className="bg-black w-full h-full rounded-3xl bg-opacity-40 hover:bg-opacity-0 cursor-pointer hover:duration-200"></div>
+              </div>
             </div>
             <div className="py-3">
               <div className="flex justify-start items-center gap-4 ">
