@@ -10,27 +10,7 @@ export function Links() {
   const { t, i18n } = useTranslation();
   return (
     <div className="font-Cairo">
-      <h2 className="text-5xl">{t("home_about_title")}</h2>
-      <div>
-        <p className="text-xl font-light mt-10">
-          J'ai 25 ans, je suis récemment devenu en décembre 2022 développeur web
-          fullstack, je suis née au Portugal, mais j'ai vécu presque toute ma
-          vie en France. Après de nombreuses expériences dans différents
-          domaines liés à l'informatique, j'ai décidé de me former au
-          developpement web via Ironhack São Paulo. Après le Bootcamp Ironhack,
-          j'ai fais des missions amicales pour des amis et des projects
-          personnels à fin de m'auto-former et être prêt pour le marché du
-          travail. Curieux et touche-à-tout lié au domaine WEB je suis très
-          enthousiaste de démarrer une nouvelle expérience.
-        </p>
-        <h2 className="text-2xl mt-6">Hobbies & Tech Interests</h2>
-        <p className="text-xl font-light mt-1">
-          Passionner par le Tennis & le Footbal. Actuellement, je suis et
-          m'auto-forme sur tout ce qui touche de près ou de loin à ReactJS,
-          Typescript et ses librairies, ainsi que NodeJS. Je commence également
-          l'apprentissage de NextJS.
-        </p>
-      </div>
+      <h2 className="text-5xl">{t("home_links_title")}</h2>
       <div className=" mt-20 flex w-full gap-10">
         <div className="flex flex-col w-[50%] gap-10">
           <div className="flex gap-10">

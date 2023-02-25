@@ -3,12 +3,13 @@ import "../../../i18n";
 import { Navbar } from "../../../layouts/Navbar";
 import { Projects } from "../../../components/Projects";
 import { Footer } from "../../../layouts/Footer";
+import { About } from "../../../components/About";
 import { Links } from "../../../components/Links";
 
 export function HomeBView() {
   const { t, i18n } = useTranslation();
   return (
-    <div className="w-full h-full font-Cairo text-white flex flex-col justify-start items-center bg-gradient-to-b from-[#161413] via-[#160616] to-[#160822] animate-gradient ">
+    <div className="w-full h-full font-Cairo text-white flex flex-col justify-start items-center bg-gradient-to-b from-[#1a1613] via-[#130616] to-[#160822] ">
       <div className=" w-[1100px]">
         <Navbar />
 
@@ -32,6 +33,9 @@ export function HomeBView() {
 
         <div className="mt-24">
           <Projects />
+        </div>
+        <div className="mt-24">
+          <About />
         </div>
         <div className="mt-24">
           <Links />
