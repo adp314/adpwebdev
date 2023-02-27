@@ -10,10 +10,12 @@ export function HomeBView() {
   const { t, i18n } = useTranslation();
   return (
     <div className="w-full h-full font-Cairo text-white flex flex-col justify-start items-center bg-gradient-to-b from-[#1a1613] via-[#130616] to-[#160822] ">
-      <div className=" w-[1100px]">
+      <div className=" w-[1200px]">
         <Navbar />
 
         <div className="flex-col">
+          <div className="absolute inset-y-16 inset-x-0 w-16 rounded-full rotate-45 bg-gradient-to-b from-pink-800 to-purple-900 blur-3xl mx-auto scale-y-150 animate-gradient opacity-30" />
+          <div className="absolute inset-y-16 inset-x-0 w-16 rounded-full rotate-12 bg-gradient-to-b from-pink-800 to-purple-900 blur-3xl mx-auto scale-y-150 animate-gradient opacity-30" />
           <div className="flex justify-between">
             <div className="mt-24">
               <h1 className="text-6xl ">
