@@ -1,40 +1,35 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { BrowserView, MobileView, TabletView } from "react-device-detect";
-import { HomeBView } from "./pages/BrowserView/Home";
+import { WorkBView } from "./pages/BrowserView/Work";
+import { AboutBView } from "./pages/BrowserView/About";
 import { HomeMView } from "./pages/MobileView/Home";
 import "./i18n";
-import { Suspense } from "react";
-
-const loadingTraduction = "Loading traduction...";
-
-
 
 function App() {
   return (
     <BrowserRouter>
-      <Suspense fallback={loadingTraduction}>
-        <BrowserView>
-          <Routes>
-            <Route path="/" element={<HomeBView />} />
-            <Route path="/home" element={<HomeBView />} />
-          </Routes>
-        </BrowserView>
-        {/* /// */}
-        <MobileView>
-          <Routes>
-            <Route path="/" element={<HomeMView />} />
-            <Route path="/home" element={<HomeMView />} />
-          </Routes>
-        </MobileView>
-        {/* /// */}
-        <TabletView>
-          <Routes>
-            <Route path="/" element={<HomeBView />} />
-            <Route path="/home" element={<HomeBView />} />
-          </Routes>
-        </TabletView>
-      </Suspense>
+      <BrowserView>
+        <Routes>
+          <Route path="/" element={<Navigate to="/work" />} />
+          <Route path="/work" element={<WorkBView />} />
+          <Route path="/about" element={<AboutBView />} />
+        </Routes>
+      </BrowserView>
+      {/* /// */}
+      <MobileView>
+        <Routes>
+          <Route path="/" element={<HomeMView />} />
+          <Route path="/home" element={<HomeMView />} />
+        </Routes>
+      </MobileView>
+      {/* /// */}
+      <TabletView>
+        <Routes>
+          <Route path="/" element={<WorkBView />} />
+          <Route path="/home" element={<WorkBView />} />
+        </Routes>
+      </TabletView>
     </BrowserRouter>
   );
 }
