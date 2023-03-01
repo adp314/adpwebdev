@@ -40,7 +40,7 @@ export function Projects() {
               }
             />
           </div>
-          <div className="w-full flex flex-col gap-4">
+          <div className="w-full flex flex-col gap-4 ml-2.5">
             <div>
               <p className="text-xl uppercase">MyCinelist.app</p>
               <p className="text-base text-neutral-400 font-light tracking-normal mt-2 ">
@@ -80,18 +80,18 @@ export function Projects() {
               }
             />
           </div>
-          <div className="w-full flex flex-col gap-4">
+          <div className="w-full flex flex-col gap-4 ml-2.5">
             <div>
-              <p className="text-lg uppercase">Goultarena.gg</p>
-              <p className="text-base text-gray-300 font-light tracking-normal  ">
+              <p className="text-xl uppercase">Goultarena.gg</p>
+              <p className="text-base text-neutral-400 font-light tracking-normal mt-2">
                 My first project with React, i worked with a colleague of my
                 bootcamp, We have made a personal movie list webapp with a
                 external API fetchs.
               </p>
             </div>
-            <div className="bg-neutral-800 bg-opacity-80 rounded-full w-max h-max flex justify-start items-center cursor-pointer px-4 py-1 text-sm font-light gap-2 drop-shadow-sm uppercase">
-              <span>View project</span>
-              <BsArrowRight className="text-lg" />
+            <div className="bg-neutral-800 tracking-normal bg-opacity-80 rounded-full w-max h-max flex justify-start items-center cursor-pointer px-5 py-2 text-lg font-light gap-2 mt-2 drop-shadow-sm">
+              <span className="ml-1">View project</span>
+              <BsArrowRight className="text-base" />
             </div>
           </div>
         </div>
@@ -120,18 +120,18 @@ export function Projects() {
               }
             />
           </div>
-          <div className="w-full flex flex-col gap-4">
+          <div className="w-full flex flex-col gap-4 ml-2.5">
             <div>
-              <p className="text-lg uppercase">Adpwebdev.com</p>
-              <p className="text-base text-gray-300 font-light tracking-normal ">
+              <p className="text-xl uppercase">Adpwebdev.com</p>
+              <p className="text-base text-neutral-400 font-light tracking-normal mt-2">
                 This is my first portfolio website, i made it quickly from
                 scratch with only react & tailwindcss, another one is planned in
                 NextJS soon.
               </p>
             </div>
-            <div className="bg-neutral-800 bg-opacity-80 rounded-full w-max h-max flex justify-start items-center cursor-pointer px-4 py-1 text-sm font-light gap-2 drop-shadow-sm uppercase">
-              <span>View project</span>
-              <BsArrowRight className="text-lg" />
+            <div className="bg-neutral-800 tracking-normal bg-opacity-80 rounded-full w-max h-max flex justify-start items-center cursor-pointer px-5 py-2 text-lg font-light gap-2 mt-2 drop-shadow-sm">
+              <span className="ml-1">View project</span>
+              <BsArrowRight className="text-base" />
             </div>
           </div>
         </div>
@@ -145,11 +145,6 @@ export function Projects() {
                       ?????? /// 2023
                     </div>
                     <div className="flex justify-center">
-                      {/* <img
-                        src={ironhacklogo}
-                        alt=""
-                        className="h-20 w-20 opacity-50 group-hover:h-24 group-hover:w-24 group-hover:transform group-hover:-rotate-6 group-hover:opacity-80 group-hover:duration-300"
-                      /> */}
                       <p className="text-3xl">?</p>
                     </div>
                     <div className="flex justify-end text-sm uppercase font-light text-opacity-10 ">
@@ -160,17 +155,17 @@ export function Projects() {
               }
             />
           </div>
-          <div className="w-full flex flex-col gap-4">
+          <div className="w-full flex flex-col gap-4 ml-2.5">
             <div>
-              <p className="text-xl">??????.???</p>
-              <p className="text-base text-gray-300 font-light tracking-normal ">
+              <p className="text-xl uppercase">??????.???</p>
+              <p className="text-base text-neutral-400 font-light tracking-normal mt-2">
                 After worked on multiples small projects for learn the basics of
                 NextJS, i'm enthousiat to start a real project with you.
               </p>
             </div>
-            <div className="bg-neutral-800 bg-opacity-80 rounded-full w-max h-max flex justify-start items-center cursor-pointer px-4 py-1 text-sm font-light gap-2 drop-shadow-sm uppercase">
-              <span>View project</span>
-              <BsArrowRight className="text-lg" />
+            <div className="bg-neutral-800 tracking-normal bg-opacity-80 rounded-full w-max h-max flex justify-start items-center cursor-pointer px-5 py-2 text-lg font-light gap-2 mt-2 drop-shadow-sm">
+              <span className="ml-1">View project</span>
+              <BsArrowRight className="text-base" />
             </div>
           </div>
         </div>
