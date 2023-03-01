@@ -105,19 +105,21 @@ export function Navbar() {
             <div className="text-xl font-light flex justify-start items-center ml-8 gap-6">
               <div className={isWorkPage ? " text-white" : "text-neutral-400"}>
                 <Link to="/work">
-                  <p>Work</p>
+                  <p className="hover:text-white">Work</p>
                 </Link>
               </div>
               <div className={isAboutPage ? " text-white" : "text-neutral-400"}>
                 <Link to="/about">
-                  <p>About</p>
+                  <p className="hover:text-white">About</p>
                 </Link>
               </div>
             </div>
           </div>
         </div>
         <div className="flex justify-start items-center gap-2 cursor-pointer">
-          <p className="text-xl font-light">andredp314@gmail.com</p>
+          <p className="text-xl font-light tracking-normal">
+            andredp314@gmail.com
+          </p>
           <BsArrowUpRight className="text-xl" />
         </div>
       </div>

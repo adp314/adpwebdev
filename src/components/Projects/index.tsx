@@ -4,6 +4,7 @@ import "../../i18n";
 import { Cards } from "../Cards";
 import ironhacklogo from "../../assets/ironhack.png";
 import goultarenalogo from "../../assets/goultarenalogo.png";
+import adplogo from "../../assets/adplogo.png";
 import { BsArrowRight } from "react-icons/bs";
 import { TbWorld } from "react-icons/tb";
 
@@ -11,28 +12,28 @@ export function Projects() {
   const { t, i18n } = useTranslation();
 
   return (
-    <div className="font-Cairo tracking-normal">
+    <div className="font-Cairo">
       <h2 className="text-5xl">{t("home_project_title")}</h2>
 
       <div className="flex justify-between w-full">
-        <div className=" mt-4 w-64 h-[440px] flex flex-col justify-between items-center">
+        <div className=" mt-4 w-64 h-[500px] flex flex-col justify-between items-center">
           <div className="mt-12 hover:mt-10 hover:duration-300">
             <Cards
               cardContainer={
                 <div className="h-full w-full rounded-3xl group">
-                  <div className="h-full w-full py-2 px-5 rounded-3xl flex flex-col justify-between cursor-pointer text-gray-400 group-hover:text-white group-hover:duration-300 group-hover:bg-neutral-600 group-hover:bg-opacity-5">
-                    <div className="flex justify-start items-center text-lg font-light ">
-                      2022/11 /// Cinelist
+                  <div className="h-full w-full py-2 px-5 rounded-3xl flex flex-col justify-between cursor-pointer text-gray-400 group-hover:text-white group-hover:duration-300 group-hover:bg-neutral-600 group-hover:bg-opacity-10">
+                    <div className="flex justify-start items-center text-sm font-light uppercase">
+                      Cinelist /// 2022
                     </div>
                     <div className="flex justify-center">
                       <img
                         src={ironhacklogo}
                         alt=""
-                        className="h-20 w-20 opacity-50 group-hover:h-24 group-hover:w-24 group-hover:rotate-6 group-hover:opacity-80 group-hover:duration-300"
+                        className="h-20 w-20 opacity-50 group-hover:h-24 group-hover:w-24 group-hover:transform group-hover:-rotate-6 group-hover:opacity-80 group-hover:duration-300"
                       />
                     </div>
-                    <div className="flex justify-end text-lg font-light text-opacity-10 ">
-                      // Bootcamp project
+                    <div className="flex justify-end text-sm uppercase font-light text-opacity-10 ">
+                      /// React
                     </div>
                   </div>
                 </div>
@@ -41,84 +42,136 @@ export function Projects() {
           </div>
           <div className="w-full flex flex-col gap-4">
             <div>
-              <p className="text-xl">Cinelist</p>
-              <p className="text-base text-gray-300 font-light">
-                On this project of the stage 2 Ironhack, i have worked with 3
-                friends, We have made a list webapp with a external API fetchs blabla lbalbla bla just text.
+              <p className="text-lg uppercase">MyCinelist.app</p>
+              <p className="text-base text-gray-300 font-light tracking-normal ">
+                My first project with React, i worked with a colleague of my
+                bootcamp, We have made a personal movie list webapp with a
+                external API fetchs.
               </p>
             </div>
-            <div className="bg-neutral-800 rounded-full w-max h-max flex justify-start items-center cursor-pointer px-4 py-1 text-xl font-light gap-2">
+            <div className="bg-neutral-800 bg-opacity-80 rounded-full w-max h-max flex justify-start items-center cursor-pointer px-4 py-1 text-sm font-light gap-2 drop-shadow-sm uppercase">
               <span>View project</span>
-              <BsArrowRight />
+              <BsArrowRight className="text-lg" />
             </div>
           </div>
         </div>
 
-        <div className="mt-16 hover:mt-14 hover:duration-300">
-          <Cards
-            cardContainer={
-              <div className="h-full w-full rounded-3xl group">
-                <div className=" h-full w-full py-2 px-5 rounded-3xl flex flex-col justify-between cursor-pointer text-gray-400 group-hover:text-white group-hover:duration-300">
-                  <div className="flex justify-start items-center text-lg font-light">
-                    2023/01 /// Goultarena
-                  </div>
-                  <div className="flex justify-center">
-                    <img
-                      src={goultarenalogo}
-                      alt=""
-                      className="h-20 w-20 ml-2 opacity-50 group-hover:opacity-80 group-hover:duration-300"
-                    />
-                  </div>
-                  <div className="flex justify-end text-lg font-light text-opacity-10">
-                    // Dofus fansite
-                  </div>
-                </div>
-              </div>
-            }
-          />
-        </div>
-        <div className="mt-16 hover:mt-14 hover:duration-300">
-          <Cards
-            cardContainer={
-              <div className="h-full w-full rounded-3xl group">
-                <div className="h-full w-full py-2 px-5 rounded-3xl flex flex-col justify-between cursor-pointer text-gray-400 group-hover:text-white group-hover:duration-300">
-                  <div className="flex justify-start items-center text-lg font-light ">
-                    2023/02 /// Adpwebdev
-                  </div>
-                  <div className="flex justify-center opacity-50 group-hover:opacity-80 group-hover:duration-300">
-                    <div className="flex justify-center items-center text-3xl pb-2 bg-gray-900 bg-opacity-70 rounded-2xl h-16 w-20 text-white">
-                      <span className="underline">a</span>
-                      <p className="font-bold">dp</p>
+        <div className=" mt-4 w-64 h-[500px] flex flex-col justify-between items-center">
+          <div className="mt-12 hover:mt-10 hover:duration-300">
+            <Cards
+              cardContainer={
+                <div className="h-full w-full rounded-3xl group">
+                  <div className="h-full w-full py-2 px-5 rounded-3xl flex flex-col justify-between cursor-pointer text-gray-400 group-hover:text-white group-hover:duration-300 group-hover:bg-neutral-600 group-hover:bg-opacity-10">
+                    <div className="flex justify-start items-center text-sm font-light uppercase">
+                      goultarena /// 2023
+                    </div>
+                    <div className="flex justify-center">
+                      <img
+                        src={goultarenalogo}
+                        alt=""
+                        className="h-20 w-20 opacity-50 group-hover:h-24 group-hover:w-24 group-hover:transform group-hover:-rotate-6 group-hover:opacity-80 group-hover:duration-300"
+                      />
+                    </div>
+                    <div className="flex justify-end text-sm uppercase font-light text-opacity-10 ">
+                      /// React
                     </div>
                   </div>
-                  <div className="flex justify-end text-lg font-light text-opacity-10 ">
-                    // Personal website
-                  </div>
                 </div>
-              </div>
-            }
-          />
+              }
+            />
+          </div>
+          <div className="w-full flex flex-col gap-4">
+            <div>
+              <p className="text-lg uppercase">Goultarena.gg</p>
+              <p className="text-base text-gray-300 font-light tracking-normal  ">
+                My first project with React, i worked with a colleague of my
+                bootcamp, We have made a personal movie list webapp with a
+                external API fetchs.
+              </p>
+            </div>
+            <div className="bg-neutral-800 bg-opacity-80 rounded-full w-max h-max flex justify-start items-center cursor-pointer px-4 py-1 text-sm font-light gap-2 drop-shadow-sm uppercase">
+              <span>View project</span>
+              <BsArrowRight className="text-lg" />
+            </div>
+          </div>
         </div>
-        <div className="mt-16">
-          <Cards
-            cardContainer={
-              <div className="h-full w-full rounded-3xl ">
-                <div className="h-full w-full py-2 px-5 rounded-3xl flex flex-col justify-between text-gray-400">
-                  <div className="flex justify-start items-center text-lg font-light ">
-                    2023/?? /// ??????
-                  </div>
-                  <div className="flex justify-center">
-                    <div className="flex justify-center items-center text-4xl pb-2 rounded-full h-20 w-24">
-                      <p className="font-bold">?</p>
+
+        <div className=" mt-4 w-64 h-[500px] flex flex-col justify-between items-center">
+          <div className="mt-12 hover:mt-10 hover:duration-300">
+            <Cards
+              cardContainer={
+                <div className="h-full w-full rounded-3xl group">
+                  <div className="h-full w-full py-2 px-5 rounded-3xl flex flex-col justify-between cursor-pointer text-gray-400 group-hover:text-white group-hover:duration-300 group-hover:bg-neutral-600 group-hover:bg-opacity-10">
+                    <div className="flex justify-start items-center text-sm font-light uppercase">
+                      Adpwebdev /// 2023
+                    </div>
+                    <div className="flex justify-center">
+                      <img
+                        src={adplogo}
+                        alt=""
+                        className="h-20 w-20 opacity-50 rounded-3xl group-hover:h-24 group-hover:w-24 group-hover:transform group-hover:-rotate-6 group-hover:opacity-80 group-hover:duration-300"
+                      />
+                    </div>
+                    <div className="flex justify-end text-sm uppercase font-light text-opacity-10 ">
+                      /// React
                     </div>
                   </div>
-                  <div className="flex justify-end text-lg font-light text-opacity-10 ">
-                    // Coming soon
+                </div>
+              }
+            />
+          </div>
+          <div className="w-full flex flex-col gap-4">
+            <div>
+              <p className="text-lg uppercase">Adpwebdev.com</p>
+              <p className="text-base text-gray-300 font-light tracking-normal ">
+                This is my first portfolio website, i made it from scratch with
+                only react & tailwindcss, another one is coming in NextJS.
+              </p>
+            </div>
+            <div className="bg-neutral-800 bg-opacity-80 rounded-full w-max h-max flex justify-start items-center cursor-pointer px-4 py-1 text-sm font-light gap-2 drop-shadow-sm uppercase">
+              <span>View project</span>
+              <BsArrowRight className="text-lg" />
+            </div>
+          </div>
+        </div>
+        <div className=" mt-4 w-64 h-[500px] flex flex-col justify-between items-center">
+          <div className="mt-12 hover:mt-10 hover:duration-300">
+            <Cards
+              cardContainer={
+                <div className="h-full w-full rounded-3xl group">
+                  <div className="h-full w-full py-2 px-5 rounded-3xl flex flex-col justify-between cursor-pointer text-gray-400 group-hover:text-white group-hover:duration-300 group-hover:bg-neutral-600 group-hover:bg-opacity-10">
+                    <div className="flex justify-start items-center text-sm font-light uppercase">
+                      ?????? /// 2023
+                    </div>
+                    <div className="flex justify-center">
+                      {/* <img
+                        src={ironhacklogo}
+                        alt=""
+                        className="h-20 w-20 opacity-50 group-hover:h-24 group-hover:w-24 group-hover:transform group-hover:-rotate-6 group-hover:opacity-80 group-hover:duration-300"
+                      /> */}
+                      <p className="text-3xl">?</p>
+                    </div>
+                    <div className="flex justify-end text-sm uppercase font-light text-opacity-10 ">
+                      /// Next
+                    </div>
                   </div>
                 </div>
-              </div>
-            }
-          />
+              }
+            />
+          </div>
+          <div className="w-full flex flex-col gap-4">
+            <div>
+              <p className="text-xl">??????</p>
+              <p className="text-base text-gray-300 font-light tracking-normal ">
+                After worked on multiples small projects for learn the basics of
+                NextJS, i'm enthousiat to start a real project with you.
+              </p>
+            </div>
+            <div className="bg-neutral-800 bg-opacity-80 rounded-full w-max h-max flex justify-start items-center cursor-pointer px-4 py-1 text-sm font-light gap-2 drop-shadow-sm uppercase">
+              <span>View project</span>
+              <BsArrowRight className="text-lg" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
