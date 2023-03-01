@@ -29,7 +29,7 @@ export function WorkBView() {
 
                 <p>{t("home_presentation_3")}</p>
               </h1>
-              <div className="mt-14 bg-[#1d1d1dbd] bg-opacity-90 w-max h-max px-4 py-1 rounded-full font-light flex justify-center items-center gap-1 drop-shadow-lg ">
+              <div className="mt-14 bg-[#222222bd] bg-opacity-90 w-max h-max px-4 py-1 rounded-full font-light flex justify-center items-center gap-1 drop-shadow-lg ">
                 <BsDot className="text-4xl text-green-400" />
                 <p className="uppercase text-base mr-3">Available for work</p>
               </div>
@@ -37,10 +37,10 @@ export function WorkBView() {
           </div>
         </div>
 
-        <div className="mt-28">
+        <div className="mt-36">
           <Projects />
         </div>
-        <div className="mt-32">
+        <div className="mt-36">
           <Footer />
         </div>
       </div>
