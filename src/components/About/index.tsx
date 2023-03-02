@@ -16,7 +16,7 @@ export function About() {
   const { t, i18n } = useTranslation();
   return (
     <div className="">
-      <div className="font-Cairo">
+      <div className="font-Cairo ">
         <h2 className="text-3xl font-light">
           J'ai 25 ans, née au Portugal, mais j'ai vécu presque toute ma vie en
           France. Après de nombreuses expériences dans différents domaines liés
@@ -36,17 +36,17 @@ export function About() {
         </div>
         <div className="mt-20">
           <h2 className="text-5xl mt-10">Skills</h2>
-          <div className="w-full h-full rounded-3xl flex mt-4">
-            <img className="h-32 w-32" src={tslogo} />
-            <img className="h-32 w-32" src={gitlogo} />
-            <img className="h-32 w-32" src={nextlogo} />
-            <img className="h-32 w-32" src={reactlogo} />
-            <img className="h-32 w-32" src={nodelogo} />
-            <img className="h-32 w-32" src={reactquerylogo} />
-            <img className="h-32 w-32" src={tailwindlogo} />
-            <img className="h-32 w-32" src={mangodblogo} />
-            <img className="h-32 w-32" src={postgrelogo} />
-            <img className="h-32 w-32" src={reduxlogo} />
+          <div className="w-full h-full rounded-3xl flex justify-between items-center mt-20">
+            <img className="w-16" src={tslogo} />
+            <img className="w-16" src={gitlogo} />
+            <img className="w-16" src={nextlogo} />
+            <img className="w-20" src={reactlogo} />
+            <img className="w-20" src={nodelogo} />
+            <img className="w-20" src={reactquerylogo} />
+            <img className="w-20" src={tailwindlogo} />
+            <img className="w-24" src={mangodblogo} />
+            <img className="w-20" src={postgrelogo} />
+            <img className="w-20" src={reduxlogo} />
           </div>
         </div>
       </div>
