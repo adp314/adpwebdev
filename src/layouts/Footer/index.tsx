@@ -1,5 +1,5 @@
 import { FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { AiOutlineCopyright } from "react-icons/Ai";
+import { AiOutlineCopyright } from "react-icons/ai";
 
 export function Footer() {
   return (
