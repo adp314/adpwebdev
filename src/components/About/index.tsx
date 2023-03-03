@@ -27,13 +27,12 @@ export function About() {
           enthousiaste de démarrer une nouvelle expérience.
         </h2>
         <h2 className="text-2xl mt-10">Hobbies</h2>
-        <div className="w-full h-full rounded-3xl ">
+        <div className="w-full h-full rounded-3xl">
           <p className="text-xl font-light ">
-            Passionner par le Tennis & le Footbal. ReactJS, Typescript et ses
-            librairies, ainsi que NodeJS. Je commence également l'apprentissage
-            de NextJS.
+            Passionner par le Tennis & le Footbal.
           </p>
         </div>
+      
         <div className="mt-20">
           <h2 className="text-5xl mt-10">Skills</h2>
           <div className="w-full h-full rounded-3xl flex justify-between items-center mt-20">
