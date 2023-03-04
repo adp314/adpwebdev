@@ -10,11 +10,11 @@ export function ResponsiveCardsXL() {
   const { t, i18n } = useTranslation();
 
   return (
-    <div className="font-Cairo border">
+    <div className="font-Cairo">
       <h2 className="text-5xl">{t("home_project_title")}</h2>
 
       <div className="flex justify-between w-full">
-        <div className=" mt-4 w-64 h-[500px] flex flex-col justify-between items-center">
+        <div className=" mt-4 w-64 h-[500px] flex flex-col justify-between items-start">
           <div className="mt-12 hover:mt-10 hover:duration-300">
             <Cards
               cardContainer={
@@ -54,7 +54,7 @@ export function ResponsiveCardsXL() {
           </div>
         </div>
 
-        <div className=" mt-4 w-64 h-[500px] flex flex-col justify-between items-center">
+        <div className=" mt-4 w-64 h-[500px] flex flex-col justify-between items-start">
           <div className="mt-12 hover:mt-10 hover:duration-300">
             <Cards
               cardContainer={
@@ -94,7 +94,7 @@ export function ResponsiveCardsXL() {
           </div>
         </div>
 
-        <div className=" mt-4 w-64 h-[500px] flex flex-col justify-between items-center">
+        <div className=" mt-4 w-64 h-[500px] flex flex-col justify-between items-start">
           <div className="mt-12 hover:mt-10 hover:duration-300">
             <Cards
               cardContainer={
@@ -133,7 +133,7 @@ export function ResponsiveCardsXL() {
             </div>
           </div>
         </div>
-        <div className=" mt-4 w-64 h-[500px] flex flex-col justify-between items-center">
+        <div className=" mt-4 w-64 h-[500px] flex flex-col justify-between items-start">
           <div className="mt-12 hover:mt-10 hover:duration-300">
             <Cards
               cardContainer={

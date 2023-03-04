@@ -10,6 +10,8 @@ import { TbWorld } from "react-icons/tb";
 import { useWindowSize } from "../../hooks/useWindowSize";
 import { ResponsiveCardsXL } from "../ResponsiveCardsXL";
 import { ResponsiveCardsLG } from "../ResponsiveCardsLG";
+import { ResponsiveCardsMD } from "../ResponsiveCardsMD";
+import { ResponsiveCardsSM } from "../ResponsiveCardsSM";
 
 interface Size {
   width: number | undefined;
@@ -31,9 +33,9 @@ export function Projects() {
   return (
     <>
       {sWidth > 1280 && <ResponsiveCardsXL />}
-      {sWidth < 1280 && sWidth > 1024 && <ResponsiveCardsLG />}
-      {/* {sWidth < 1024 && sWidth > 640 && <ResponsiveCardsMD />}
-      {sWidth < 640 && <ResponsiveCardsSM />} */}
+      {sWidth < 1280 && sWidth >= 1024 && <ResponsiveCardsLG />}
+      {sWidth < 1024 && sWidth >= 640 && <ResponsiveCardsMD />}
+      {sWidth < 640 && <ResponsiveCardsSM />}
     </>
   );
 }

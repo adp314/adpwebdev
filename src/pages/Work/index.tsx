@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import "../../i18n";
 import { useLocation } from "react-router-dom";
 import { Navbar } from "../../layouts/Navbar";
+import { NavbarMobile } from "../../layouts/NavbarMobile";
 import { Projects } from "../../components/Projects";
 import { Footer } from "../../layouts/Footer";
 import { About } from "../../components/About";
@@ -26,11 +27,13 @@ export function WorkBView() {
     sHeight = size.height;
   }
 
+  console.log(sWidth);
+
   return (
     <>
-      {sWidth > 1280 && (
+      {sWidth >= 1280 && (
         <div className="w-full h-full font-Cairo tracking-widest text-white flex flex-col justify-start items-center bg-gradient-to-b from-[#09020a] to-[#11041a]">
-          <div className=" w-[1280px]">
+          <div className=" w-[1265px]">
             <Navbar />
 
             <div className="flex-col">
@@ -65,9 +68,9 @@ export function WorkBView() {
           </div>
         </div>
       )}
-      {sWidth < 1280 && sWidth > 1024 && (
+      {sWidth < 1280 && sWidth >= 1024 && (
         <div className="w-full h-full font-Cairo tracking-widest text-white flex flex-col justify-start items-center bg-gradient-to-b from-[#09020a] to-[#11041a]">
-          <div className=" w-[1024px]">
+          <div className=" w-[1000px]">
             <Navbar />
 
             <div className="flex-col">
@@ -139,18 +142,18 @@ export function WorkBView() {
           </div>
         </div>
       )}
-      {sWidth < 640 && (
+      {sWidth <= 640 && (
         <div className="w-full h-full font-Cairo tracking-widest text-white flex flex-col justify-start items-center bg-gradient-to-b from-[#09020a] to-[#11041a]">
-          <div className=" w-[640px]">
-            <Navbar />
+          <div className=" w-[320px]">
+            <NavbarMobile />
 
             <div className="flex-col">
               <div className="absolute inset-y-16 inset-x-0 w-16 rounded-full rotate-45 bg-gradient-to-b from-pink-800 to-purple-900 blur-3xl mx-auto scale-y-150 animate-gradientSpeed opacity-30" />
               <div className="absolute inset-y-16 inset-x-0 w-16 rounded-full rotate-12 bg-gradient-to-b from-pink-800 to-purple-900 blur-3xl mx-auto scale-y-150 animate-gradientSpeed opacity-25" />
               <div className="absolute inset-y-16 inset-x-0 w-16 rounded-full rotate-90 bg-gradient-to-b from-pink-800 to-purple-900 blur-3xl mx-auto scale-y-150 animate-gradientSpeed opacity-30" />
               <div className="flex justify-between">
-                <div className="mt-36">
-                  <h1 className="text-7xl flex flex-col gap-3">
+                <div className="mt-32">
+                  <h1 className="text-4xl flex flex-col gap-3">
                     <p>{t("home_presentation_1")}</p>
 
                     <p>{t("home_presentation_2")}</p>
@@ -167,10 +170,10 @@ export function WorkBView() {
               </div>
             </div>
 
-            <div className="mt-36">
+            <div className="mt-32">
               <Projects />
             </div>
-            <div className="mt-36">
+            <div className="mt-28">
               <Footer />
             </div>
           </div>

@@ -6,7 +6,7 @@ import goultarenalogo from "../../assets/goultarenalogo.png";
 import adplogo from "../../assets/adplogo.png";
 import { BsArrowRight } from "react-icons/bs";
 
-export function ResponsiveCardsMD() {
+export function ResponsiveCardsSM() {
   const { t, i18n } = useTranslation();
 
   return (

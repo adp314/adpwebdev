@@ -13,8 +13,8 @@ export function ResponsiveCardsLG() {
     <div className="font-Cairo">
       <h2 className="text-5xl">{t("home_project_title")}</h2>
 
-      <div className="flex justify-between w-full flex-wrap">
-        <div className=" mt-4 w-64 h-[500px] flex flex-col justify-between items-center">
+      <div className="flex gap-20 overflow-x-auto">
+        <div className=" mt-4 w-64 h-[500px] flex flex-col justify-between items-start mb-10">
           <div className="mt-12 hover:mt-10 hover:duration-300">
             <Cards
               cardContainer={
