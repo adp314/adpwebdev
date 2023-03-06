@@ -34,8 +34,8 @@ export function Projects() {
     <>
       {sWidth > 1280 && <ResponsiveCardsXL />}
       {sWidth < 1280 && sWidth >= 1024 && <ResponsiveCardsLG />}
-      {sWidth < 1024 && sWidth >= 640 && <ResponsiveCardsMD />}
-      {sWidth < 640 && <ResponsiveCardsSM />}
+      {sWidth < 1024 && sWidth >= 700 && <ResponsiveCardsMD />}
+      {sWidth < 700 && <ResponsiveCardsSM />}
     </>
   );
 }

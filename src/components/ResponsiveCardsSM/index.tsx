@@ -11,7 +11,7 @@ export function ResponsiveCardsSM() {
 
   return (
     <div className="font-Cairo">
-      <h2 className="text-5xl">{t("home_project_title")}</h2>
+      <h2 className="text-4xl">{t("home_project_title")}</h2>
 
       <div className="flex gap-8 overflow-x-auto">
         <div className=" mt-4 w-64 h-[500px] flex flex-col justify-between items-start mb-10">
