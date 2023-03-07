@@ -1,18 +1,34 @@
 import { useTranslation } from "react-i18next";
 import "../../i18n";
+import { useWindowSize } from "../../hooks/useWindowSize";
 import { BsArrowRight, BsTwitter, BsGithub } from "react-icons/bs";
 import { RiFileTextFill } from "react-icons/ri";
-import { FiDownload } from "react-icons/fi";
+import { IoMdOpen } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { ImLinkedin2 } from "react-icons/im";
 
+interface Size {
+  width: number | undefined;
+  height: number | undefined;
+}
+
 export function Links() {
   const { t, i18n } = useTranslation();
+  const size: Size = useWindowSize();
+
+  let sWidth = 0;
+  let sHeight = 0;
+
+  if (size.width && size.height != undefined) {
+    sWidth = size.width;
+    sHeight = size.height;
+  }
   return (
     <div className="font-Cairo">
-      <h2 className="text-5xl">{t("home_links_title")}</h2>
+      {sWidth >= 700 && <h2 className="text-5xl">{t("about_contactlinks")}</h2>}
+      {sWidth < 700 && <h2 className="text-4xl">{t("about_contactlinks")}</h2>}
       <div className=" mt-20 flex w-full gap-10 p-3 overflow-x-auto">
-        <div className="flex flex-col w-max gap-10">
+        <div className="flex flex-col w-max gap-10 mb-8">
           <div className="flex gap-10">
             <div className=" h-56 w-64 bg-gradient-to-b from-[#2a3138] to-[#11141a] rounded-3xl  p-0.5 drop-shadow-lg">
               <div className="w-full h-full bg-gradient-to-b from-[#1e2429] to-[#0e1114] rounded-3xl rounded-bl-3xl ">
@@ -29,8 +45,13 @@ export function Links() {
                     </div>
                   </div>
                   <div className="bg-[#2e2e2e] rounded-full mt-5 w-max py-2 px-4 flex justify-start items-center">
-                    <div className="flex justify-start items-center gap-2 text-[#c9c9c9] hover:text-white hover:duration-200 cursor-pointer drop-shadow-lg">
-                      <p className="text-base">Follow me</p>
+                    <div
+                      className="flex justify-start items-center gap-2 text-[#c9c9c9] hover:text-white hover:duration-200 cursor-pointer drop-shadow-lg"
+                      onClick={() =>
+                        (window.location.href = "https://github.com/adp314")
+                      }
+                    >
+                      <p className="text-base">{t("links_follow")}</p>
                       <BsArrowRight className="text-lg " />
                     </div>
                   </div>
@@ -52,8 +73,13 @@ export function Links() {
                     </div>
                   </div>
                   <div className="bg-[#0660af] rounded-full mt-5 w-max py-2 px-4 flex justify-start items-center">
-                    <div className="flex justify-start items-center gap-2 text-[#c9c9c9] hover:text-white cursor-pointer drop-shadow-lg hover:duration-200">
-                      <p className="text-base">Follow me</p>
+                    <div
+                      className="flex justify-start items-center gap-2 text-[#c9c9c9] hover:text-white cursor-pointer drop-shadow-lg hover:duration-200"
+                      onClick={() =>
+                        (window.location.href = "https://twitter.com/adp_314")
+                      }
+                    >
+                      <p className="text-base">{t("links_follow")}</p>
                       <BsArrowRight className="text-lg" />
                     </div>
                   </div>
@@ -61,22 +87,28 @@ export function Links() {
               </div>
             </div>
           </div>
-          <div className=" h-24 w-full bg-gradient-to-b from-[#10201d] to-[#17332a] rounded-3xl p-0.5 drop-shadow-lg">
-            <div className="bg-gradient-to-b from-[#101f1a] to-[#182b24] h-full w-full rounded-3xl ">
+          <div className=" h-24 w-full bg-gradient-to-b from-[#10201d] to-[#173324] rounded-3xl p-0.5 drop-shadow-lg">
+            <div
+              className="bg-gradient-to-b from-[#12241e] to-[#0e3a27] h-full w-full rounded-3xl cursor-pointer"
+              onClick={() =>
+                (window.location.href =
+                  "https://res.cloudinary.com/adpinto314/image/upload/v1678224835/personal/adp_cv_page-0001_ux3i7o.jpg")
+              }
+            >
               <div className="w-full h-full flex justify-between items-center px-8">
                 <div className="flex justify-start items-center gap-6">
-                  <div className="w-14 h-14 bg-[#0e3a2c] rounded-2xl flex justify-center items-center drop-shadow-lg">
+                  <div className="w-14 h-14 bg-[#0b5737] rounded-2xl flex justify-center items-center drop-shadow-lg">
                     <RiFileTextFill className="text-3xl text-white " />
                   </div>
                   <div>
                     <h2 className="text-2xl">Curriculum</h2>
                     <p className="text-lg font-light opacity-50">
-                      Download my CV here.
+                      {t("links_curriculum")}
                     </p>
                   </div>
                 </div>
-                <div className="w-14 h-14 bg-[#0e3a2c] rounded-full drop-shadow-lg flex justify-center items-center text-[#bdbdbd] cursor-pointer hover:text-white hover:duration-200">
-                  <FiDownload className="text-2xl" />
+                <div className="w-14 h-14 bg-[#0b5737] rounded-full drop-shadow-lg flex justify-center items-center text-[#bdbdbd] cursor-pointer hover:text-white hover:duration-200">
+                  <IoMdOpen className="text-2xl" />
                 </div>
               </div>
             </div>
@@ -93,7 +125,7 @@ export function Links() {
                   <div>
                     <h2 className="text-2xl">Email</h2>
                     <p className="text-lg font-light text-[#c9c9c9]">
-                      adcp314@gmail.com
+                      andredp314@gmail.com
                     </p>
                   </div>
                 </div>
@@ -114,8 +146,14 @@ export function Links() {
                     </p>
                   </div>
                   <div className="bg-[#143a61] rounded-full mt-5 w-max py-2 px-4 flex justify-start items-center">
-                    <div className="flex justify-start items-center gap-2 text-[#c9c9c9] cursor-pointer hover:text-white hover:duration-200">
-                      <p className="text-base">See my resume</p>
+                    <div
+                      className="flex justify-start items-center gap-2 text-[#c9c9c9] cursor-pointer hover:text-white hover:duration-200"
+                      onClick={() =>
+                        (window.location.href =
+                          "https://www.linkedin.com/in/adp314/")
+                      }
+                    >
+                      <p className="text-base">{t("links_linkedin")}</p>
                       <BsArrowRight className="text-lg" />
                     </div>
                   </div>

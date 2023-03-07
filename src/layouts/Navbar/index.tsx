@@ -117,9 +117,12 @@ export function Navbar() {
           </div>
         </div>
         <div className="flex justify-start items-center gap-2 cursor-pointer">
-          <p className="text-xl font-light tracking-normal">
+          <a
+            href="mailto:andredp314@gmail.com"
+            className="text-xl font-light tracking-normal"
+          >
             andredp314@gmail.com
-          </p>
+          </a>
           <BsArrowUpRight className="text-xl" />
         </div>
       </div>

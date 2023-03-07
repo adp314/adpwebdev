@@ -11,11 +11,16 @@ export function ResponsiveCardsXL() {
 
   return (
     <div className="font-Cairo">
-      <h2 className="text-5xl">{t("home_project_title")}</h2>
+      <h2 className="text-5xl">{t("work_projects")}</h2>
 
       <div className="flex justify-between w-full">
         <div className=" mt-4 w-64 h-[500px] flex flex-col justify-between items-start">
-          <div className="mt-12 hover:mt-10 hover:duration-300">
+          <div
+            className="mt-12 hover:mt-10 hover:duration-300"
+            onClick={() =>
+              (window.location.href = "https://mycinelist.netlify.app/")
+            }
+          >
             <Cards
               cardContainer={
                 <div className="h-full w-full rounded-3xl group">
@@ -42,20 +47,26 @@ export function ResponsiveCardsXL() {
             <div>
               <p className="text-xl uppercase">MyCinelist.app</p>
               <p className="text-base text-neutral-400 font-light tracking-normal mt-2 ">
-                My first project with React, i worked with a colleague of my
-                bootcamp, We have made a personal movie list webapp with a
-                external API fetchs.
+                {t("work_text_project01")}
               </p>
             </div>
-            <div className="bg-neutral-800 tracking-normal bg-opacity-80 rounded-full w-max h-max flex justify-start items-center cursor-pointer px-5 py-2 text-lg font-light gap-2 mt-2 drop-shadow-sm">
-              <span className="ml-1">View project</span>
+            <div
+              className="bg-neutral-800 tracking-normal bg-opacity-80 rounded-full w-max h-max flex justify-start items-center cursor-pointer px-5 py-2 text-lg font-light gap-2 mt-2 drop-shadow-sm"
+              onClick={() =>
+                (window.location.href = "https://github.com/adp314/cinelist")
+              }
+            >
+              <span className="ml-1">{t("work_viewproject")}</span>
               <BsArrowRight className="text-base" />
             </div>
           </div>
         </div>
 
         <div className=" mt-4 w-64 h-[500px] flex flex-col justify-between items-start">
-          <div className="mt-12 hover:mt-10 hover:duration-300">
+          <div
+            className="mt-12 hover:mt-10 hover:duration-300"
+            onClick={() => (window.location.href = "#")}
+          >
             <Cards
               cardContainer={
                 <div className="h-full w-full rounded-3xl group">
@@ -67,7 +78,7 @@ export function ResponsiveCardsXL() {
                       <img
                         src={goultarenalogo}
                         alt=""
-                        className="h-20 w-20 opacity-50 group-hover:h-24 group-hover:w-24 group-hover:transform group-hover:-rotate-6 group-hover:opacity-80 group-hover:duration-300"
+                        className="h-16 w-16 opacity-50 group-hover:h-20 group-hover:w-20 group-hover:transform group-hover:-rotate-6 group-hover:opacity-80 group-hover:duration-300"
                       />
                     </div>
                     <div className="flex justify-end text-sm uppercase font-light text-opacity-10 ">
@@ -82,20 +93,29 @@ export function ResponsiveCardsXL() {
             <div>
               <p className="text-xl uppercase">Goultarena.gg</p>
               <p className="text-base text-neutral-400 font-light tracking-normal mt-2">
-                My first project with React, i worked with a colleague of my
-                bootcamp, We have made a personal movie list webapp with a
-                external API fetchs.
+                {t("work_text_project02")}
               </p>
             </div>
-            <div className="bg-neutral-800 tracking-normal bg-opacity-80 rounded-full w-max h-max flex justify-start items-center cursor-pointer px-5 py-2 text-lg font-light gap-2 mt-2 drop-shadow-sm">
-              <span className="ml-1">View project</span>
+            <div
+              className="bg-neutral-800 tracking-normal bg-opacity-80 rounded-full w-max h-max flex justify-start items-center cursor-pointer px-5 py-2 text-lg font-light gap-2 mt-2 drop-shadow-sm"
+              onClick={() =>
+                (window.location.href =
+                  "https://github.com/adp314/goultarena-client")
+              }
+            >
+              <span className="ml-1">{t("work_viewproject")}</span>
               <BsArrowRight className="text-base" />
             </div>
           </div>
         </div>
 
         <div className=" mt-4 w-64 h-[500px] flex flex-col justify-between items-start">
-          <div className="mt-12 hover:mt-10 hover:duration-300">
+          <div
+            className="mt-12 hover:mt-10 hover:duration-300"
+            onClick={() =>
+              (window.location.href = "https://www.adpwebdev.com/")
+            }
+          >
             <Cards
               cardContainer={
                 <div className="h-full w-full rounded-3xl group">
@@ -107,7 +127,7 @@ export function ResponsiveCardsXL() {
                       <img
                         src={adplogo}
                         alt=""
-                        className="h-20 w-20 opacity-50 rounded-3xl group-hover:h-24 group-hover:w-24 group-hover:transform group-hover:-rotate-6 group-hover:opacity-80 group-hover:duration-300"
+                        className="h-16 w-16 opacity-50 rounded-full group-hover:h-20 group-hover:w-20 group-hover:transform group-hover:-rotate-6 group-hover:opacity-80 group-hover:duration-300"
                       />
                     </div>
                     <div className="flex justify-end text-sm uppercase font-light text-opacity-10 ">
@@ -122,13 +142,16 @@ export function ResponsiveCardsXL() {
             <div>
               <p className="text-xl uppercase">Adpwebdev.com</p>
               <p className="text-base text-neutral-400 font-light tracking-normal mt-2">
-                This is my first portfolio website, i made it quickly from
-                scratch with only react & tailwindcss, another one is planned in
-                NextJS soon.
+                {t("work_text_project03")}
               </p>
             </div>
-            <div className="bg-neutral-800 tracking-normal bg-opacity-80 rounded-full w-max h-max flex justify-start items-center cursor-pointer px-5 py-2 text-lg font-light gap-2 mt-2 drop-shadow-sm">
-              <span className="ml-1">View project</span>
+            <div
+              className="bg-neutral-800 tracking-normal bg-opacity-80 rounded-full w-max h-max flex justify-start items-center cursor-pointer px-5 py-2 text-lg font-light gap-2 mt-2 drop-shadow-sm"
+              onClick={() =>
+                (window.location.href = "https://github.com/adp314/adpwebdev")
+              }
+            >
+              <span className="ml-1">{t("work_viewproject")}</span>
               <BsArrowRight className="text-base" />
             </div>
           </div>
@@ -157,12 +180,11 @@ export function ResponsiveCardsXL() {
             <div>
               <p className="text-xl uppercase">??????.???</p>
               <p className="text-base text-neutral-400 font-light tracking-normal mt-2">
-                After worked on multiples small projects for learn the basics of
-                NextJS, i'm enthousiat to start a real project with you.
+                {t("work_text_project04")}
               </p>
             </div>
             <div className="bg-neutral-800 tracking-normal bg-opacity-80 rounded-full w-max h-max flex justify-start items-center cursor-pointer px-5 py-2 text-lg font-light gap-2 mt-2 drop-shadow-sm">
-              <span className="ml-1">View project</span>
+              <span className="ml-1">{t("work_viewproject")}</span>
               <BsArrowRight className="text-base" />
             </div>
           </div>

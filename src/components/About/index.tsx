@@ -36,19 +36,16 @@ export function About() {
         <div className="">
           <div className="font-Cairo ">
             <h2 className="text-3xl font-light">
-              J'ai 25 ans, née au Portugal, mais j'ai vécu presque toute ma vie
-              en France. Après de nombreuses expériences dans différents
-              domaines liés à l'informatique, j'ai décidé de me former au
-              developpement web via Ironhack. Après le Bootcamp Ironhack, j'ai
-              fais des projects personnels à fin de m'auto-former et être prêt
-              pour le marché du travail. Curieux et touche-à-tout lié au domaine
-              WEB je suis très enthousiaste de démarrer une nouvelle expérience.
+              {t("about_description_1")}
+              {t("about_description_2")}
+              {t("about_description_3")}
             </h2>
-            <h2 className="text-2xl mt-10">Hobbies</h2>
+            <h3 className="text-2xl font-light mt-2">
+              {t("about_description_4")}
+            </h3>
+            <h2 className="text-2xl mt-4">{t("about_hobbies")}</h2>
             <div className="w-full h-full rounded-3xl">
-              <p className="text-xl font-light ">
-                Passionner par le Tennis & le Footbal.
-              </p>
+              <p className="text-xl font-light ">{t("about_hobbies_1")}</p>
             </div>
 
             <div className="mt-20">
@@ -156,19 +153,16 @@ export function About() {
         <div className="">
           <div className="font-Cairo ">
             <h2 className="text-3xl font-light">
-              J'ai 25 ans, née au Portugal, mais j'ai vécu presque toute ma vie
-              en France. Après de nombreuses expériences dans différents
-              domaines liés à l'informatique, j'ai décidé de me former au
-              developpement web via Ironhack. Après le Bootcamp Ironhack, j'ai
-              fais des projects personnels à fin de m'auto-former et être prêt
-              pour le marché du travail. Curieux et touche-à-tout lié au domaine
-              WEB je suis très enthousiaste de démarrer une nouvelle expérience.
+              {t("about_description_1")}
+              {t("about_description_2")}
+              {t("about_description_3")}
             </h2>
-            <h2 className="text-2xl mt-10">Hobbies</h2>
+            <h3 className="text-2xl font-light mt-2">
+              {t("about_description_4")}
+            </h3>
+            <h2 className="text-2xl mt-4">{t("about_hobbies")}</h2>
             <div className="w-full h-full rounded-3xl">
-              <p className="text-xl font-light ">
-                Passionner par le Tennis & le Footbal.
-              </p>
+              <p className="text-xl font-light ">{t("about_hobbies_1")}</p>
             </div>
 
             <div className="mt-20">
@@ -276,19 +270,16 @@ export function About() {
         <div className="">
           <div className="font-Cairo ">
             <h2 className="text-3xl font-light">
-              J'ai 25 ans, née au Portugal, mais j'ai vécu presque toute ma vie
-              en France. Après de nombreuses expériences dans différents
-              domaines liés à l'informatique, j'ai décidé de me former au
-              developpement web via Ironhack. Après le Bootcamp Ironhack, j'ai
-              fais des projects personnels à fin de m'auto-former et être prêt
-              pour le marché du travail. Curieux et touche-à-tout lié au domaine
-              WEB je suis très enthousiaste de démarrer une nouvelle expérience.
+              {t("about_description_1")}
+              {t("about_description_2")}
+              {t("about_description_3")}
             </h2>
-            <h2 className="text-2xl mt-10">Hobbies</h2>
+            <h3 className="text-2xl font-light mt-2">
+              {t("about_description_4")}
+            </h3>
+            <h2 className="text-2xl mt-4">{t("about_hobbies")}</h2>
             <div className="w-full h-full rounded-3xl">
-              <p className="text-xl font-light ">
-                Passionner par le Tennis & le Footbal.
-              </p>
+              <p className="text-xl font-light ">{t("about_hobbies_1")}</p>
             </div>
 
             <div className="mt-20">
@@ -396,22 +387,17 @@ export function About() {
         <div className="">
           <div className="font-Cairo ">
             <h2 className="text-xl font-light">
-              J'ai 25 ans, je suisnée au Portugal, mais j'ai vécu presque toute
-              ma vie en France. Après de nombreuses expériences dans différents
-              domaines liés à l'informatique, j'ai décidé de me former au
-              developpement web via Ironhack. Après avoir réussi la formation,
-              j'ai fais des projects personnels à fin de m'auto-former et tenter
-              d'être prêt pour le marché du travail.
+              {t("about_description_1")}
+              {t("about_description_2")}
+              {t("about_description_3")}
             </h2>
-            <h2 className=" mt-4">
-              Curieux et touche-à-tout lié au domaine WEB je suis très
-              enthousiaste de démarrer une nouvelle expérience.
-            </h2>
-            <h2 className="text-xl mt-8">Hobbies</h2>
+            <h3 className="text-lg font-light mt-4">
+              {t("about_description_4")}
+            </h3>
+
+            <h2 className="text-xl mt-6">{t("about_hobbies")}</h2>
             <div className="w-full h-full rounded-3xl">
-              <p className="text-lg font-light ">
-                Passionner par le Tennis & le Footbal.
-              </p>
+              <p className="text-lg font-light ">{t("about_hobbies_1")}</p>
             </div>
 
             <div className="mt-20 tracking-normal  text-sm">

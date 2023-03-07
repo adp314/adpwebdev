@@ -103,13 +103,13 @@ export function NavbarMobile() {
               )}
             </div>
           </div>
-          <div className="text-xl font-light flex justify-start items-center gap-6">
-            <div className={isWorkPage ? " text-white" : "text-neutral-400"}>
+          <div className="text-xl font-light flex justify-start items-center gap-6 ">
+            <div className={isWorkPage ? "text-white" : "text-neutral-400"}>
               <Link to="/work">
                 <p className="hover:text-white">Work</p>
               </Link>
             </div>
-            <div className={isAboutPage ? " text-white" : "text-neutral-400"}>
+            <div className={isAboutPage ? "text-white" : "text-neutral-400"}>
               <Link to="/about">
                 <p className="hover:text-white">About</p>
               </Link>

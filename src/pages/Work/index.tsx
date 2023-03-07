@@ -43,16 +43,16 @@ export function WorkBView() {
               <div className="flex justify-between">
                 <div className="mt-36">
                   <h1 className="text-7xl flex flex-col gap-3">
-                    <p>{t("home_presentation_1")}</p>
+                    <p>{t("work_presentation_1")}</p>
 
-                    <p>{t("home_presentation_2")}</p>
+                    <p>{t("work_presentation_2")}</p>
 
-                    <p>{t("home_presentation_3")}</p>
+                    <p>{t("work_presentation_3")}</p>
                   </h1>
                   <div className="mt-14 bg-[#1f1f1faf] bg-opacity-90 w-max h-max px-4 py-1 rounded-full font-light flex justify-center items-center gap-1 drop-shadow-lg ">
                     <BsDot className="text-4xl text-green-400" />
                     <p className="uppercase text-base mr-3">
-                      Available for work
+                      {t("work_available")}
                     </p>
                   </div>
                 </div>
@@ -80,16 +80,16 @@ export function WorkBView() {
               <div className="flex justify-between">
                 <div className="mt-36">
                   <h1 className="text-6xl flex flex-col gap-3">
-                    <p>{t("home_presentation_1")}</p>
+                    <p>{t("work_presentation_1")}</p>
 
-                    <p>{t("home_presentation_2")}</p>
+                    <p>{t("work_presentation_2")}</p>
 
-                    <p>{t("home_presentation_3")}</p>
+                    <p>{t("work_presentation_3")}</p>
                   </h1>
                   <div className="mt-14 bg-[#1f1f1faf] bg-opacity-90 w-max h-max px-4 py-1 rounded-full font-light flex justify-center items-center gap-1 drop-shadow-lg ">
                     <BsDot className="text-4xl text-green-400" />
                     <p className="uppercase text-base mr-3">
-                      Available for work
+                      {t("work_available")}
                     </p>
                   </div>
                 </div>
@@ -117,16 +117,16 @@ export function WorkBView() {
               <div className="flex justify-between">
                 <div className="mt-36">
                   <h1 className="text-5xl flex flex-col gap-3">
-                    <p>{t("home_presentation_1")}</p>
+                    <p>{t("work_presentation_1")}</p>
 
-                    <p>{t("home_presentation_2")}</p>
+                    <p>{t("work_presentation_2")}</p>
 
-                    <p>{t("home_presentation_3")}</p>
+                    <p>{t("work_presentation_3")}</p>
                   </h1>
                   <div className="mt-14 bg-[#1f1f1faf] bg-opacity-90 w-max h-max px-4 py-1 rounded-full font-light flex justify-center items-center gap-1 drop-shadow-lg ">
                     <BsDot className="text-4xl text-green-400" />
                     <p className="uppercase text-base mr-3">
-                      Available for work
+                      {t("work_available")}
                     </p>
                   </div>
                 </div>
@@ -154,15 +154,17 @@ export function WorkBView() {
               <div className="flex justify-between">
                 <div className="mt-32">
                   <h1 className="text-4xl flex flex-col gap-3">
-                    <p>{t("home_presentation_1")}</p>
+                    <p>{t("work_presentation_1")}</p>
 
-                    <p>{t("home_presentation_2")}</p>
+                    <p>{t("work_presentation_2")}</p>
 
-                    <p>{t("home_presentation_3")}</p>
+                    <p>{t("work_presentation_3")}</p>
                   </h1>
                   <div className="mt-10 bg-[#222222bd] bg-opacity-90 w-max h-max px-4 py-1 rounded-full font-light flex justify-center items-center gap-1 drop-shadow-lg ">
                     <BsDot className="text-3xl text-green-400" />
-                    <p className="uppercase text-sm mr-2">Available for work</p>
+                    <p className="uppercase text-sm mr-2">
+                      {t("work_available")}
+                    </p>
                   </div>
                 </div>
               </div>

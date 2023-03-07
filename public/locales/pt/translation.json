@@ -1,13 +1,27 @@
 {
-  "nav_home": "Casa",
-  "nav_aboutMe": "SobreEu",
-  "nav_curriculum": "Curriculum",
-  "home_presentation_1": "Hello, eu sou André,",
-  "home_presentation_2": "desenvolvedor junior web fullstack,",
-  "home_presentation_3": "morando em Portugal & France.",
-  "home_subpres_1": "Available for new exciting webdev opportunities. I take freelance projects occasionally too.",
-  "home_subpres_2": "You can shoot me an email or hit me up on Twitter and Linkedin.",
-  "home_project_title": "Projetos",
-  "home_about_title": "Sobre mim",
-  "home_links_title": "Contacto & Links"
+  "nav_home": "Work",
+  "nav_about": "About",
+
+  "work_presentation_1": "Hello, i'm André,",
+  "work_presentation_2": "a junior web fullstack developer,",
+  "work_presentation_3": "based in Portugal & France.",
+  "work_available": "Available for work",
+  "work_projects": "Projetos",
+  "work_text_project01": " My first project with React, i worked with a colleague of my bootcamp, We have made a personal movie list webapp with a external API fetchs.",
+  "work_text_project02": " My first project with React, i worked with a colleague of my bootcamp, We have made a personal movie list webapp with a external API fetchs.",
+  "work_text_project03": " This is my first portfolio website, i made it quickly fromscratch with only react & tailwindcss, another one is planned in NextJS soon.",
+  "work_text_project04": "After worked on multiples small projects for learn the basics of NextJS, i'm enthousiat to start a real project with you.",
+  "work_viewproject": "Repository",
+
+  "about_description_1": "I am 25 years old, I currently reside in Portugal, but I have lived almost all my life in France.",
+  "about_description_2": " After studies and experiences in different fields related to computer science, I decided in September to stody the web development via Ironhack School.",
+  "about_description_3": " Following the Ironhack bootcamp, I did personal projects to train myself and try to be ready for the job market.",
+  "about_description_4": " Curious of all related to the WEB environment, I am very enthusiast to start a new experience.",
+  "about_hobbies": "Hobbies",
+  "about_hobbies_1": "Passionate about football & tennis, likes to ride motocross sometimes and I enjoy esports too.",
+  "about_contactlinks": "Contact & Links",
+
+  "links_follow": "Follow me",
+  "links_curriculum": "Download my CV here.",
+  "links_linkedin": "See my resume"
 }
