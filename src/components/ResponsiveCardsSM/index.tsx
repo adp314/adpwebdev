@@ -13,7 +13,7 @@ export function ResponsiveCardsSM() {
     <div className="font-Cairo">
       <h2 className="text-4xl">{t("home_project_title")}</h2>
 
-      <div className="flex gap-10 overflow-x-auto">
+      <div className="flex gap-10 overflow-x-auto w-full">
         <div className=" mt-4 w-64 h-[500px] flex flex-col justify-between items-center mb-10">
           <div className="mt-12 hover:mt-10 hover:duration-300">
             <Cards
