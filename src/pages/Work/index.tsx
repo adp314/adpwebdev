@@ -70,7 +70,7 @@ export function WorkBView() {
       )}
       {sWidth < 1280 && sWidth >= 1024 && (
         <div className="w-full h-full font-Cairo tracking-widest text-white flex flex-col justify-start items-center bg-gradient-to-b from-[#09020a] to-[#11041a]">
-          <div className=" w-[1000px]">
+          <div className=" w-[1024px] px-4">
             <Navbar />
 
             <div className="flex-col">
@@ -107,7 +107,7 @@ export function WorkBView() {
       )}
       {sWidth < 1024 && sWidth > 700 && (
         <div className="w-full h-full font-Cairo tracking-widest text-white flex flex-col justify-start items-center bg-gradient-to-b from-[#09020a] to-[#11041a]">
-          <div className=" w-[685px]">
+          <div className=" w-full h-full px-10">
             <Navbar />
 
             <div className="flex-col">
@@ -153,14 +153,14 @@ export function WorkBView() {
               <div className="absolute inset-y-16 inset-x-0 w-16 rounded-full rotate-90 bg-gradient-to-b from-pink-800 to-purple-900 blur-3xl mx-auto scale-y-150 animate-gradientSpeed opacity-30" />
               <div className="flex justify-between">
                 <div className="mt-32">
-                  <h1 className="text-5xl flex flex-col justify-center items-center gap-3">
+                  <h1 className="text-4xl flex flex-col gap-3">
                     <p>{t("home_presentation_1")}</p>
 
                     <p>{t("home_presentation_2")}</p>
 
                     <p>{t("home_presentation_3")}</p>
                   </h1>
-                  <div className="mt-12 bg-[#222222bd] bg-opacity-90 w-max h-max px-4 py-1 rounded-full font-light flex justify-center items-center gap-1 drop-shadow-lg ">
+                  <div className="mt-10 bg-[#222222bd] bg-opacity-90 w-max h-max px-4 py-1 rounded-full font-light flex justify-center items-center gap-1 drop-shadow-lg ">
                     <BsDot className="text-3xl text-green-400" />
                     <p className="uppercase text-sm mr-2">Available for work</p>
                   </div>

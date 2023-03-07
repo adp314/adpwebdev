@@ -11,32 +11,9 @@ export function Links() {
   return (
     <div className="font-Cairo">
       <h2 className="text-5xl">{t("home_links_title")}</h2>
-      <div className=" mt-20 flex w-full gap-10">
-        <div className="flex flex-col w-[50%] gap-10">
+      <div className=" mt-20 flex w-full gap-10 p-3 overflow-x-auto">
+        <div className="flex flex-col w-max gap-10">
           <div className="flex gap-10">
-            <div className=" h-56 w-64 bg-gradient-to-b from-[#1C294C] to-[#0A0E28] rounded-3xl p-0.5 drop-shadow-lg">
-              <div className="w-full h-full bg-gradient-to-b from-[#0c1e3a] to-[#0a0b1d] rounded-3xl ">
-                <div className="px-8 py-6 ">
-                  <div>
-                    <div className="w-14 h-14 bg-[#0e8fff] rounded-2xl flex justify-center items-center drop-shadow-lg">
-                      <BsTwitter className="text-white text-3xl" />
-                    </div>
-                    <div className="mt-2">
-                      <h2 className="text-2xl">Twitter</h2>
-                      <p className="text-base font-light text-[#c9c9c9]">
-                        @adp_314
-                      </p>
-                    </div>
-                  </div>
-                  <div className="bg-[#0660af] rounded-full mt-5 w-max py-2 px-4 flex justify-start items-center">
-                    <div className="flex justify-start items-center gap-2 text-[#c9c9c9] hover:text-white cursor-pointer drop-shadow-lg hover:duration-200">
-                      <p className="text-base">Follow me</p>
-                      <BsArrowRight className="text-lg" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div className=" h-56 w-64 bg-gradient-to-b from-[#2a3138] to-[#11141a] rounded-3xl  p-0.5 drop-shadow-lg">
               <div className="w-full h-full bg-gradient-to-b from-[#1e2429] to-[#0e1114] rounded-3xl rounded-bl-3xl ">
                 <div className="px-8 py-6 ">
@@ -55,6 +32,29 @@ export function Links() {
                     <div className="flex justify-start items-center gap-2 text-[#c9c9c9] hover:text-white hover:duration-200 cursor-pointer drop-shadow-lg">
                       <p className="text-base">Follow me</p>
                       <BsArrowRight className="text-lg " />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className=" h-56 w-64 bg-gradient-to-b from-[#1C294C] to-[#0A0E28] rounded-3xl p-0.5 drop-shadow-lg">
+              <div className="w-full h-full bg-gradient-to-b from-[#0c1e3a] to-[#0a0b1d] rounded-3xl ">
+                <div className="px-8 py-6 ">
+                  <div>
+                    <div className="w-14 h-14 bg-[#0e8fff] rounded-2xl flex justify-center items-center drop-shadow-lg">
+                      <BsTwitter className="text-white text-3xl" />
+                    </div>
+                    <div className="mt-2">
+                      <h2 className="text-2xl">Twitter</h2>
+                      <p className="text-base font-light text-[#c9c9c9]">
+                        @adp_314
+                      </p>
+                    </div>
+                  </div>
+                  <div className="bg-[#0660af] rounded-full mt-5 w-max py-2 px-4 flex justify-start items-center">
+                    <div className="flex justify-start items-center gap-2 text-[#c9c9c9] hover:text-white cursor-pointer drop-shadow-lg hover:duration-200">
+                      <p className="text-base">Follow me</p>
+                      <BsArrowRight className="text-lg" />
                     </div>
                   </div>
                 </div>
@@ -82,7 +82,7 @@ export function Links() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-[50%] gap-10">
+        <div className="flex flex-col w-max gap-10 ">
           <div className=" h-24 w-full bg-gradient-to-b from-[#412734] to-[#241322] rounded-3xl p-0.5 drop-shadow-lg">
             <div className="bg-gradient-to-b from-[#2C1523] to-[#20091B] h-full w-full rounded-3xl ">
               <div className="w-full h-full flex justify-between items-center px-8">
