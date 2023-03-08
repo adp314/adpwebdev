@@ -82,7 +82,7 @@ export function ResponsiveCardsMD() {
                       />
                     </div>
                     <div className="flex justify-end text-sm uppercase font-light text-opacity-10 ">
-                      /// React
+                      /// React & Node
                     </div>
                   </div>
                 </div>
