@@ -48,9 +48,9 @@ export function About() {
               <p className="text-xl font-light ">{t("about_hobbies_1")}</p>
             </div>
 
-            <div className="mt-20">
-              <h2 className="text-5xl mt-10">Skills</h2>
-              <div className="w-full h-full flex flex-wrap justify-evenly items-center mt-10 ">
+            <div className="mt-36">
+              <h2 className="text-5xl ">Skills</h2>
+              <div className="w-full h-full flex flex-wrap gap-8 items-center mt-16">
                 <div className="mb-8 text-center text-neutral-600 font-light">
                   <img
                     className="w-16 mb-3 mx-2"
@@ -165,9 +165,9 @@ export function About() {
               <p className="text-xl font-light ">{t("about_hobbies_1")}</p>
             </div>
 
-            <div className="mt-20">
-              <h2 className="text-5xl mt-10">Skills</h2>
-              <div className="w-full h-full flex flex-wrap justify-evenly items-center mt-10 ">
+            <div className="mt-36">
+              <h2 className="text-5xl">Skills</h2>
+              <div className="w-full h-full flex flex-wrap gap-3 items-center mt-16">
                 <div className="mb-8 text-center text-neutral-600  font-light">
                   <img
                     className="w-16 mb-3 mx-2"
@@ -282,9 +282,9 @@ export function About() {
               <p className="text-xl font-light ">{t("about_hobbies_1")}</p>
             </div>
 
-            <div className="mt-20">
-              <h2 className="text-5xl mt-12">Skills</h2>
-              <div className="w-full h-full flex flex-wrap justify-evenly items-center mt-10 ">
+            <div className="mt-36">
+              <h2 className="text-5xl">Skills</h2>
+              <div className="w-full h-full flex flex-wrap justify-evenly items-center mt-16 ">
                 <div className="mb-8 text-center text-neutral-600  font-light">
                   <img
                     className="w-16 mb-3 mx-2"
@@ -400,7 +400,7 @@ export function About() {
               <p className="text-lg font-light ">{t("about_hobbies_1")}</p>
             </div>
 
-            <div className="mt-20 tracking-normal  text-sm">
+            <div className="mt-36 tracking-normal  text-sm">
               <h2 className="text-4xl">Skills</h2>
               <div className="w-full h-full flex flex-wrap justify-evenly items-center mt-10 italic ">
                 <div className="mb-8 text-center text-neutral-600  font-light">
