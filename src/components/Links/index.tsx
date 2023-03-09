@@ -92,7 +92,7 @@ export function Links() {
               className="bg-gradient-to-b from-[#12241e] to-[#0e3a27] h-full w-full rounded-3xl cursor-pointer"
               onClick={() =>
                 (window.location.href =
-                  "https://res.cloudinary.com/adpinto314/image/upload/v1678224835/personal/adp_cv_page-0001_ux3i7o.jpg")
+                  "https://res.cloudinary.com/adpinto314/image/upload/v1678364376/personal/Andr%C3%A9_DC._Pinto_qn0jft.jpg")
               }
             >
               <div className="w-full h-full flex justify-between items-center px-8">

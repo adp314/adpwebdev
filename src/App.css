@@ -4,21 +4,19 @@
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: #eeeeee rgb(80, 80, 80);
+  scrollbar-color: #a0a0a0 rgb(49, 49, 49);
 }
 
 *::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
 }
 
 *::-webkit-scrollbar-track {
-  background: #eeeeee;
+  background: #313131;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: rgb(80, 80, 80);
-  border-radius: 30px;
-  border: 3px solid #2c2c2c;
+  background-color: rgb(160, 160, 160);
 }
 
 @config "../tailwind.config.cjs";
