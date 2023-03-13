@@ -165,10 +165,10 @@ export function ResponsiveCardsLG() {
                 <div className="h-full w-full rounded-3xl group">
                   <div className="h-full w-full py-2 px-5 rounded-3xl flex flex-col justify-between cursor-pointer text-gray-400 group-hover:text-white group-hover:duration-300 group-hover:bg-neutral-600 group-hover:bg-opacity-10">
                     <div className="flex justify-start items-center text-sm font-light uppercase">
-                      ?????? /// 2023
+                      socialbakers /// 2023
                     </div>
                     <div className="flex justify-center">
-                      <p className="text-3xl">?</p>
+                      <p className="text-3xl">SB</p>
                     </div>
                     <div className="flex justify-end text-sm uppercase font-light text-opacity-10 ">
                       /// Next
@@ -180,12 +180,18 @@ export function ResponsiveCardsLG() {
           </div>
           <div className="w-full flex flex-col gap-4 ml-2.5">
             <div>
-              <p className="text-xl uppercase">??????.???</p>
+            <p className="text-lg uppercase">socialbakers.com (wip)</p>
               <p className="text-base text-neutral-400 font-light tracking-normal mt-2">
                 {t("work_text_project04")}
               </p>
             </div>
-            <div className="bg-neutral-800 tracking-normal bg-opacity-80 rounded-full w-max h-max flex justify-start items-center cursor-pointer px-5 py-2 text-lg font-light gap-2 mt-2 drop-shadow-sm">
+            <div
+              className="bg-neutral-800 tracking-normal bg-opacity-80 rounded-full w-max h-max flex justify-start items-center cursor-pointer px-5 py-2 text-lg font-light gap-2 mt-2 drop-shadow-sm"
+              onClick={() =>
+                (window.location.href =
+                  "https://github.com/adp314/socialbakers")
+              }
+            >
               <span className="ml-1">{t("work_viewproject")}</span>
               <BsArrowRight className="text-base" />
             </div>
