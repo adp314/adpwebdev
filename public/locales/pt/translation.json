@@ -3,8 +3,8 @@
   "nav_about": "About",
 
   "work_presentation_1": "Olá, sou André,",
-  "work_presentation_2": "um desenvolvedor fullstack junior,",
-  "work_presentation_3": "basiado em Portugal & France.",
+  "work_presentation_2": "um desenvolvedor fullstack júnior,",
+  "work_presentation_3": "baseado em Portugal & France.",
   "work_available": "Disponível ao trabalho",
   "work_projects": "Projetos",
   "work_text_project01": "Meu primeiro projeto em React, trabalhei com um colega do bootcamp. Nos criamos uma webapp de filmlist com external API fetchs.",
