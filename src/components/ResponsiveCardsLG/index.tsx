@@ -168,7 +168,7 @@ export function ResponsiveCardsLG() {
                       socialbakers /// 2023
                     </div>
                     <div className="flex justify-center">
-                      <p className="text-3xl">SB</p>
+                      <p className="text-3xl">S</p>
                     </div>
                     <div className="flex justify-end text-sm uppercase font-light text-opacity-10 ">
                       /// Next
@@ -180,7 +180,7 @@ export function ResponsiveCardsLG() {
           </div>
           <div className="w-full flex flex-col gap-4 ml-2.5">
             <div>
-            <p className="text-lg uppercase">socialbakers.com (wip)</p>
+            <p className="text-lg uppercase">socialenga.com (wip)</p>
               <p className="text-base text-neutral-400 font-light tracking-normal mt-2">
                 {t("work_text_project04")}
               </p>
