@@ -163,7 +163,7 @@ export function ResponsiveCardsXL() {
                 <div className="h-full w-full rounded-3xl group">
                   <div className="h-full w-full py-2 px-5 rounded-3xl flex flex-col justify-between cursor-pointer text-gray-400 group-hover:text-white group-hover:duration-300 group-hover:bg-neutral-600 group-hover:bg-opacity-10">
                     <div className="flex justify-start items-center text-sm font-light uppercase">
-                      socialbakers /// 2023
+                      socialenga /// 2023
                     </div>
                     <div className="flex justify-center">
                       <p className="text-3xl">S</p>
