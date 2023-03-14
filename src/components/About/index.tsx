@@ -2,10 +2,9 @@ import { useTranslation } from "react-i18next";
 import "../../i18n";
 import { useWindowSize } from "../../hooks/useWindowSize";
 import tslogo from "../../assets/ts.png";
-import jslogo from "../../assets/js.png";
 import nextlogo from "../../assets/nextjs.png";
 import reactlogo from "../../assets/reactjs.png";
-import nodelogo from "../../assets/nodejs.png";
+import nodelogo from "../../assets/node.png";
 import gitlogo from "../../assets/git.png";
 import reactquerylogo from "../../assets/reactquery.png";
 import tailwindlogo from "../../assets/Tailwind.png";
@@ -92,7 +91,7 @@ export function About() {
 
                 <div className="mb-8 text-center text-neutral-600  font-light">
                   <img
-                    className="w-20 mx-2"
+                    className="w-16 mx-2"
                     title="NodeJS"
                     alt="NodeJS"
                     src={nodelogo}
@@ -209,7 +208,7 @@ export function About() {
 
                 <div className="mb-8 text-center text-neutral-600  font-light">
                   <img
-                    className="w-20 mx-2"
+                    className="w-16 mx-2"
                     title="NodeJS"
                     alt="NodeJS"
                     src={nodelogo}
@@ -326,7 +325,7 @@ export function About() {
 
                 <div className="mb-8 text-center text-neutral-600  font-light">
                   <img
-                    className="w-20 mx-2"
+                    className="w-16 mx-2"
                     title="NodeJS"
                     alt="NodeJS"
                     src={nodelogo}
@@ -444,7 +443,7 @@ export function About() {
 
                 <div className="mb-8 text-center text-neutral-600  font-light">
                   <img
-                    className="w-20 mx-2"
+                    className="w-16 mx-2"
                     title="NodeJS"
                     alt="NodeJS"
                     src={nodelogo}
