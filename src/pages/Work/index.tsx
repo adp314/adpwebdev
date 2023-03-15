@@ -1,12 +1,9 @@
 import { useTranslation } from "react-i18next";
 import "../../i18n";
-import { useLocation } from "react-router-dom";
 import { Navbar } from "../../layouts/Navbar";
 import { NavbarMobile } from "../../layouts/NavbarMobile";
 import { Projects } from "../../components/Projects";
 import { Footer } from "../../layouts/Footer";
-import { About } from "../../components/About";
-import { Links } from "../../components/Links";
 import { BsDot } from "react-icons/bs";
 import { useWindowSize } from "../../hooks/useWindowSize";
 
