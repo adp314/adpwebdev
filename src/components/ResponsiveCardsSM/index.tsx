@@ -3,6 +3,7 @@ import "../../i18n";
 import { Cards } from "../Cards";
 import ironhacklogo from "../../assets/ironhack.png";
 import goultarenalogo from "../../assets/goultarenalogo.png";
+import socialengalogo from "../../assets/socialenga.png";
 import adplogo from "../../assets/adplogo.png";
 import { BsArrowRight } from "react-icons/bs";
 
@@ -91,7 +92,7 @@ export function ResponsiveCardsSM() {
           </div>
           <div className="w-full flex flex-col gap-4 ml-2.5">
             <div>
-              <p className="text-xl uppercase">Goultarena.gg</p>
+              <p className="text-xl uppercase">Goultarena.gg (wip)</p>
               <p className="text-base text-neutral-400 font-light tracking-normal mt-2 ">
                 {t("work_text_project02")}
               </p>
@@ -163,10 +164,14 @@ export function ResponsiveCardsSM() {
                 <div className="h-full w-full rounded-3xl group">
                   <div className="h-full w-full py-2 px-5 rounded-3xl flex flex-col justify-between cursor-pointer text-gray-400 group-hover:text-white group-hover:duration-300 group-hover:bg-neutral-600 group-hover:bg-opacity-10">
                     <div className="flex justify-start items-center text-sm font-light uppercase">
-                    socialenga /// 2023
+                      socialenga /// 2023
                     </div>
                     <div className="flex justify-center">
-                      <p className="text-3xl">S</p>
+                    <img
+                        src={socialengalogo}
+                        alt="socialenga_logo"
+                        className="h-32 w-32 opacity-50 rounded-full group-hover:h-36 group-hover:w-36 group-hover:transform group-hover:-rotate-6 group-hover:opacity-80 group-hover:duration-300"
+                      />
                     </div>
                     <div className="flex justify-end text-sm uppercase font-light text-opacity-10 ">
                       /// Next
@@ -178,7 +183,7 @@ export function ResponsiveCardsSM() {
           </div>
           <div className="w-full flex flex-col gap-4 ml-2.5">
             <div>
-            <p className="text-lg uppercase">socialenga.com (wip)</p>
+              <p className="text-lg uppercase">socialenga.com (wip)</p>
               <p className="text-base text-neutral-400 font-light tracking-normal mt-2">
                 {t("work_text_project04")}
               </p>
@@ -187,7 +192,7 @@ export function ResponsiveCardsSM() {
               className="bg-neutral-800 tracking-normal bg-opacity-80 rounded-full w-max h-max flex justify-start items-center cursor-pointer px-5 py-2 text-lg font-light gap-2 mt-2 drop-shadow-sm"
               onClick={() =>
                 (window.location.href =
-                  "https://github.com/adp314/socialbakers")
+                  "https://github.com/adp314/socialenga")
               }
             >
               <span className="ml-1">{t("work_viewproject")}</span>
