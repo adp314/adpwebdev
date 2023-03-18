@@ -3,7 +3,7 @@ import "../../i18n";
 import { Cards } from "../Cards";
 import ironhacklogo from "../../assets/ironhack.png";
 import goultarenalogo from "../../assets/goultarenalogo.png";
-import socialengalogo from "../../assets/socialenga.png";
+import socialengalogo from "../../assets/socialenga_1.png";
 import adplogo from "../../assets/adplogo.png";
 import { BsArrowRight } from "react-icons/bs";
 
@@ -168,7 +168,7 @@ export function ResponsiveCardsSM() {
                     <div className="flex justify-center">
                     <img
                         src={socialengalogo}
-                        alt="socialenga_logo"
+                        alt=""
                         className="h-32 w-32 opacity-50 rounded-full group-hover:h-36 group-hover:w-36 group-hover:transform group-hover:-rotate-6 group-hover:opacity-80 group-hover:duration-300"
                       />
                     </div>
