@@ -10,7 +10,6 @@ import { BsArrowRight } from "react-icons/bs";
 
 export function ResponsiveCardsLG() {
   const { t, i18n } = useTranslation();
-
   return (
     <div className="font-Cairo">
       <h2 className="text-5xl">{t("work_projects")}</h2>
